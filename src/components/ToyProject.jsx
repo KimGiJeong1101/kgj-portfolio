@@ -1039,36 +1039,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 }}
               >
                 URL
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
-                    }}
-                  >
-                    <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
-                    ></GitHubIcon>
-                  </Box>
-                </a>
+              
                 <a
                   href="https://example.com"
                   target="_blank"
@@ -1316,36 +1287,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 }}
               >
                 URL
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
-                    }}
-                  >
-                    <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
-                    ></GitHubIcon>
-                  </Box>
-                </a>
+                
                 <a
                   href="https://example.com"
                   target="_blank"
@@ -1588,36 +1530,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 }}
               >
                 URL
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
-                    }}
-                  >
-                    <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
-                    ></GitHubIcon>
-                  </Box>
-                </a>
+               
                 <a
                   href="https://example.com"
                   target="_blank"
