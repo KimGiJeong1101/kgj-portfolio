@@ -245,7 +245,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="https://example.com"
+                  href="https://github.com/KimGiJeong1101/kgj-portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -275,7 +275,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   </Box>
                 </a>
                 <a
-                  href="https://example.com"
+                  href="https://kimgijeong1101.github.io/kgj-portfolio/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -520,7 +520,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="https://example.com"
+                  href="https://github.com/KimGiJeong1101/KeyManager"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -549,7 +549,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                     ></GitHubIcon>
                   </Box>
                 </a>
-                <a
+                {/* <a
                   href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -578,7 +578,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                       sx={{ fontSize: { xs: 23, sm: 28 } }}
                     ></VideoIcon>
                   </Box>
-                </a>
+                </a> */}
               </Typography>
             </Box>
           </Box>
