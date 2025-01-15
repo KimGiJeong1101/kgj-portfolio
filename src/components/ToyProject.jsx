@@ -1532,7 +1532,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 URL
                
                 <a
-                  href="https://kimgijeong1101.github.io/kgj-portfolio/swf/"
+                  href="https://kimgijeong1101.github.io/toyzip/swf/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
