@@ -795,7 +795,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="/Haksavideo.mp4"
+                  href="./images/Haksavideo.mp4"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
