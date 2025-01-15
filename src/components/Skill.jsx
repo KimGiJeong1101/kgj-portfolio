@@ -119,7 +119,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="/vscode.png"
+              src="/images/vscode.png"
               alt="VS-Code"
               style={{
                 width: "80%",
@@ -193,7 +193,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="/IntelliJ.png"
+              src="/images/IntelliJ.png"
               alt="IntelliJ"
               style={{
                 width: "80%",
@@ -253,7 +253,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="/eclipse.png"
+              src="/images/eclipse.png"
               alt="Eclipse"
               style={{
                 width: "80%",
@@ -313,7 +313,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="/git.png"
+              src="/images/git.png"
               alt="Git"
               style={{
                 width: "80%",
@@ -384,7 +384,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="/OracleDeTool.png"
+              src="/images/OracleDeTool.png"
               alt="Oracle SQL Developer"
               style={{
                 width: "80%",
@@ -472,7 +472,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="/HeidiSQL.png"
+              src="/images/HeidiSQL.png"
               alt="HeidiSQL"
               style={{
                 width: "80%",
@@ -532,7 +532,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="/compass.png"
+              src="/images/compass.png"
               alt="MongoDBCompass"
               style={{
                 width: "80%",
@@ -606,7 +606,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="/SourceTree.png"
+              src="/images/SourceTree.png"
               alt="SourceTree"
               style={{
                 width: "80%",
@@ -757,7 +757,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/React.png"
+                src="/images/React.png"
                 alt="React"
                 style={{
                   width: "80%",
@@ -817,7 +817,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/javascript.png"
+                src="/images/javascript.png"
                 alt="JavaScript"
                 style={{
                   width: "80%",
@@ -877,7 +877,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/ajax.png"
+                src="/images/ajax.png"
                 alt="AJAX"
                 style={{
                   width: "80%",
@@ -937,7 +937,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/jquery.png"
+                src="/images/jquery.png"
                 alt="jQuery"
                 style={{
                   width: "80%",
@@ -1008,7 +1008,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/html.png"
+                src="/images/html.png"
                 alt="HTML"
                 style={{
                   width: "80%",
@@ -1068,7 +1068,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/css3.png"
+                src="/images/css3.png"
                 alt="CSS3"
                 style={{
                   width: "80%",
@@ -1128,7 +1128,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/bootstrap.png"
+                src="/images/bootstrap.png"
                 alt="BootStrap"
                 style={{
                   width: "100%",
@@ -1188,7 +1188,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/JSP.png"
+                src="/images/JSP.png"
                 alt="JSP"
                 style={{
                   width: "80%",
@@ -1315,7 +1315,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/java.png"
+                src="/images/java.png"
                 alt="JAVA"
                 style={{
                   width: "80%",
@@ -1376,7 +1376,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/spring.png"
+                src="/images/spring.png"
                 alt="Spring"
                 style={{
                   width: "80%",
@@ -1436,7 +1436,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/springboot.png"
+                src="/images/springboot.png"
                 alt="SpringBoot"
                 style={{
                   width: "80%",
@@ -1509,7 +1509,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/nodeJS.png"
+                src="/images/nodeJS.png"
                 alt="NodeJS"
                 style={{
                   width: "80%",
@@ -1568,7 +1568,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/expressJS.png"
+                src="/images/expressJS.png"
                 alt="ExpressJS"
                 style={{
                   width: "80%",
@@ -1695,7 +1695,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/OracleDB.png"
+                src="/images/OracleDB.png"
                 alt="OracleDB"
                 style={{
                   width: "80%",
@@ -1755,7 +1755,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/mysql.png"
+                src="/images/mysql.png"
                 alt="MySQL"
                 style={{
                   width: "80%",
@@ -1815,7 +1815,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/mariadb.png"
+                src="/images/mariadb.png"
                 alt="MariaDB"
                 style={{
                   width: "80%",
@@ -1875,7 +1875,7 @@ const Skill = () => {
               }}
             >
               <img
-                src="/MongoDB.png"
+                src="/images/MongoDB.png"
                 alt="MongoDB"
                 style={{
                   width: "80%",
