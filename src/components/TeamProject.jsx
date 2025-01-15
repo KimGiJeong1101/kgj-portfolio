@@ -47,7 +47,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/Clubing Thumb.png"
+            src="./images/Clubing Thumb.png"
             alt="Clubing Thumbnail"
             style={{
               width: "100%",
@@ -299,7 +299,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/BelleAnge Thumb.png"
+            src="./images/BelleAnge Thumb.png"
             alt="BelleAnge Thumbnail"
             style={{
               width: "100%",
@@ -582,7 +582,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/SCON Thumb.png"
+            src="./images/SCON Thumb.png"
             alt="SCON Thumbnail"
             style={{
               width: "100%",
@@ -867,7 +867,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/whiskey Thumb.png"
+            src="./images/whiskey Thumb.png"
             alt="whiskey Thumbnail"
             style={{
               width: "100%",
@@ -1147,7 +1147,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
         >
           <Box
             component="img"
-            src="/images/proLoading.png"
+            src="./images/proLoading.png"
             alt="프로젝트준비중..."
             sx={{
               width: "100%",
@@ -1202,7 +1202,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
         >
           <Box
             component="img"
-            src="/images/proLoading.png"
+            src="./images/proLoading.png"
             alt="프로젝트준비중..."
             sx={{
               width: "100%",

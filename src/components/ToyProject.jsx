@@ -45,7 +45,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/portfolio.png"
+            src="./images/portfolio.png"
             alt="portfolio"
             style={{
               width: "100%",
@@ -327,7 +327,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/keymanager.png"
+            src="./images/keymanager.png"
             alt="keymanager"
             style={{
               width: "100%",
@@ -602,7 +602,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/Haksa.jpg"
+            src="./images/Haksa.jpg"
             alt="Haksa"
             style={{
               width: "100%",
@@ -847,7 +847,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/hyundai.jpg"
+            src="./images/hyundai.jpg"
             alt="hyundai"
             style={{
               width: "100%",
@@ -1122,7 +1122,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/kdigital.jpg"
+            src="./images/kdigital.jpg"
             alt="kdigital"
             style={{
               width: "100%",
@@ -1399,7 +1399,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
           }}
         >
           <img
-            src="/images/swf.jpg"
+            src="./images/swf.jpg"
             alt="swf"
             style={{
               width: "100%",

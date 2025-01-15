@@ -67,7 +67,7 @@ const AboutMeLast = () => {
             <Box>
               <img
                 style={{ width: "75%", height: "75%", borderRadius: "25%" }}
-                src="/images/이력서사진.jpg"
+                src="./images/이력서사진.jpg"
               ></img>
             </Box>
           </Grid>
