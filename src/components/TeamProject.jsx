@@ -155,9 +155,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   fontSize: { xs: "12px", sm: "15px" },
                 }}
               >
-                <li>
-                  MongoDB를 사용하여 데이터베이스를 설계, 유연하게 관리
-                </li>
+                <li>MongoDB를 사용하여 데이터베이스를 설계, 유연하게 관리</li>
                 <li>
                   Axios와 CORS 설정으로 백엔드와 프론트엔드 간의 원활한 데이터
                   통신 구현

@@ -3,7 +3,7 @@ import TeamProject from "./TeamProject";
 import ToyProject from "./ToyProject";
 import { Box, Button, Grid, Typography } from "@mui/material";
 
-const ProFrameTest = () => {
+const ProjectFrame = () => {
   const [projectType, setProjectType] = useState(""); // "toy" or "team"
   const [isVisible, setIsVisible] = useState(false); // 애니메이션 상태 관리
 
@@ -272,4 +272,4 @@ const ProFrameTest = () => {
   );
 };
 
-export default ProFrameTest;
+export default ProjectFrame;

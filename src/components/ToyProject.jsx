@@ -155,25 +155,21 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   fontSize: { xs: "12px", sm: "15px" },
                 }}
               >
-               <li>
-  React로 유연하고 효율적인 페이지 구현, 컴포넌트 구조로 재사용성과 유지보수성 향상
-</li>
-<li>
-  Vite로 최적화된 개발 환경 제공, 빠른 빌드 속도
-</li>
-<li>
-  MUI 라이브러리로 다양한 UI 구성, 일관된 디자인과 빠른 개발 가능
-</li>
-<li>
-  커스터마이징된 함수로 UI 동작 다양화, 사용자 경험 향상
-</li>
-<li>
-  개별 컴포넌트 관리로 코드 가독성 및 유지보수성 향상
-</li>
-<li>
-  그림, 아이콘, hover 효과로 시각적 흥미 유도, 몰입감 있는 UI 제공
-</li>
-
+                <li>
+                  React로 유연하고 효율적인 페이지 구현, 컴포넌트 구조로
+                  재사용성과 유지보수성 향상
+                </li>
+                <li>Vite로 최적화된 개발 환경 제공, 빠른 빌드 속도</li>
+                <li>
+                  MUI 라이브러리로 다양한 UI 구성, 일관된 디자인과 빠른 개발
+                  가능
+                </li>
+                <li>커스터마이징된 함수로 UI 동작 다양화, 사용자 경험 향상</li>
+                <li>개별 컴포넌트 관리로 코드 가독성 및 유지보수성 향상</li>
+                <li>
+                  그림, 아이콘, hover 효과로 시각적 흥미 유도, 몰입감 있는 UI
+                  제공
+                </li>
               </Box>
             </Typography>
 
@@ -429,7 +425,10 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   padding: "0px",
                 }}
               >
-               이 사이트는 Windows 키와 Microsoft Office 등 key를 효율적으로 관리하기 위해 개발된 사이트입니다. React로 동적 렌더링을 최적화하고, Express와 Node.js를 활용해 빠르고 안정적인 서버 환경을 구현했습니다
+                이 사이트는 Windows 키와 Microsoft Office 등 key를 효율적으로
+                관리하기 위해 개발된 사이트입니다. React로 동적 렌더링을
+                최적화하고, Express와 Node.js를 활용해 빠르고 안정적인 서버
+                환경을 구현했습니다
               </Typography>{" "}
               <Box
                 component="ul"
@@ -438,18 +437,12 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   fontSize: { xs: "12px", sm: "15px" },
                 }}
               >
-                <li>
-                React를 사용해 동적 렌더링을 최적화
-                </li>
-                <li>
-                React Hook과 useState로 효율적인 상태 관리를 구현
-                </li>
+                <li>React를 사용해 동적 렌더링을 최적화</li>
+                <li>React Hook과 useState로 효율적인 상태 관리를 구현</li>
                 <li>Node.js와 Express로 비동기 처리와 안정적인 백엔드 구축</li>
-<li>Nodemon으로 코드 변경 시 서버 자동 재시작 설정</li>
-<li>Axios로 RESTful API 구현 및 데이터 통신 지원</li>
-<li>PostgreSQL로 데이터베이스 설계와 안정성 확보</li>
-
-              
+                <li>Nodemon으로 코드 변경 시 서버 자동 재시작 설정</li>
+                <li>Axios로 RESTful API 구현 및 데이터 통신 지원</li>
+                <li>PostgreSQL로 데이터베이스 설계와 안정성 확보</li>
               </Box>
             </Typography>
 
@@ -486,13 +479,14 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   }}
                 >
                   {[
-                    "React.sj","React Hooks",
+                    "React.sj",
+                    "React Hooks",
                     "Material-UI",
                     "Node.js",
                     "Express.js",
-                    
+
                     "PostgreSQL",
-                   
+
                     "Axios",
                     "RESTful API",
                   ].map((tech, index) => (
@@ -721,12 +715,12 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   애플리케이션으로 동작
                 </li>
                 <li>
-                  Java Swing에서 제공하는 UI 컴포넌트를 사용하여 
-                  별도의 HTML과 같은 프론트엔드 기술이 필요하지 않음
+                  Java Swing에서 제공하는 UI 컴포넌트를 사용하여 별도의 HTML과
+                  같은 프론트엔드 기술이 필요하지 않음
                 </li>
                 <li>
-                  Oracle DB를 기반으로 데이터베이스를 설계, 테이블 간의
-                  관계를 체계적으로 설정하여 데이터의 일관성과 정확성을 보장
+                  Oracle DB를 기반으로 데이터베이스를 설계, 테이블 간의 관계를
+                  체계적으로 설정하여 데이터의 일관성과 정확성을 보장
                 </li>
               </Box>
             </Typography>
