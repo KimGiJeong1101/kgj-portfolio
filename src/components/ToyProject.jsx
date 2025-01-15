@@ -1041,7 +1041,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 URL
               
                 <a
-                  href="https://example.com"
+                  href="https://github.com/KimGiJeong1101/kgj-portfolio/tree/main/hyundai"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -1289,7 +1289,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 URL
                 
                 <a
-                  href="https://example.com"
+                  href="https://github.com/KimGiJeong1101/kgj-portfolio/tree/main/company"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -1532,7 +1532,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 URL
                
                 <a
-                  href="https://example.com"
+                  href="https://github.com/KimGiJeong1101/kgj-portfolio/tree/main/swf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
