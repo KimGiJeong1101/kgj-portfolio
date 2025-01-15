@@ -253,7 +253,7 @@ const Skill = () => {
             }}
           >
             <img
-              src="../images/eclipse.png"
+              src="./images/eclipse.png"
               alt="Eclipse"
               style={{
                 width: "80%",
