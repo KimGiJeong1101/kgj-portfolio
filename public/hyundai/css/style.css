@@ -44,6 +44,7 @@ article h1:hover{color: white; background-color: #0A3464;}
 
     article{width: 100%; height: 425px;}
     
+    
     article:nth-of-type(1)>img:nth-last-of-type(2){display: none;}
     article:nth-of-type(1)>img:nth-last-of-type(1){display: block;}
 
@@ -113,17 +114,13 @@ article h1:hover{color: white; background-color: #0A3464;}
     article h1:hover{line-height: 425px; color: white; background-color: #0A3464; font-weight: bold;}
     
     
-    article:nth-of-type(1){width: 66.66%; background-color: blue;}
-    article:nth-of-type(2){height: 850px; background-color: red; float: right;}
-    article:nth-of-type(3){background-color: green;}
+    article:nth-of-type(1){width: 66.66%;}
+    article:nth-of-type(2){height: 850px; float: right;}
     article:nth-of-type(4){background-color: white;}
-    article:nth-of-type(5){height: 850px; background-color: rgb(255, 127, 202);}
-    article:nth-of-type(6){background-color: aquamarine;}
+    article:nth-of-type(5){height: 850px;}
     article:nth-of-type(7){background-color: white;}
-    article:nth-of-type(8){width: 66.66%; background-color: rgb(43, 131, 226);}
-    article:nth-of-type(9){background-color: rgb(100, 0, 128);}
+    article:nth-of-type(8){width: 66.66%;}
     article:nth-of-type(10){background-color: white;}
-    article:nth-of-type(11){background-color: rgb(128, 94, 0);}
     
     article:nth-of-type(1)>img:nth-last-of-type(2){display: block;}
     article:nth-of-type(1)>img:nth-last-of-type(1){display: none;}
