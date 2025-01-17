@@ -38,22 +38,26 @@ const AboutMeFirst = () => {
         >
           <Box>
             <Typography
-              sx={{ color: "#f9f9f9", fontSize: { xs: "35px", sm: "55px" } }}
+              sx={{ color: "#f9f9f9", fontSize: { xs: "25px", lg: "55px" } }}
             >
               안녕하세요.
             </Typography>
             <Typography
-              sx={{ color: "#f9f9f9", fontSize: { xs: "48px", sm: "85px" } }}
+              sx={{ color: "#f9f9f9", fontSize: { xs: "30px", lg: "85px" } }}
             >
               신입개발자 김기정입니다.
             </Typography>
             <Typography
-              sx={{ color: "#f9f9f9", fontSize: { xs: "20px", sm: "30px" } }}
+              sx={{
+                color: "#f9f9f9",
+                marginTop: { xs: "30px", lg: "35px" },
+                fontSize: { xs: "14px", lg: "30px" },
+              }}
             >
               꾸준히 배우고 도전하며, 함께 성장하는 개발자가 되어,
             </Typography>
             <Typography
-              sx={{ color: "#f9f9f9", fontSize: { xs: "20px", sm: "30px" } }}
+              sx={{ color: "#f9f9f9", fontSize: { xs: "14px", lg: "30px" } }}
             >
               작은 성취를 모아 큰 변화를 만들어내고 싶습니다.
             </Typography>

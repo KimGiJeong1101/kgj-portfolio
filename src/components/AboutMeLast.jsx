@@ -49,7 +49,7 @@ const AboutMeLast = () => {
             overflow: "hidden", // 자식 요소가 테두리를 벗어나지 않도록 처리
             height: "100%",
             boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.9)", // 부드러운 그림자
-            marginTop: { xs: 5, sm: 0 },
+            marginTop: { xs: 5, lg: 0 },
           }}
         >
           {/* 왼쪽/위 영역 */}
@@ -62,11 +62,16 @@ const AboutMeLast = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              paddingTop: { xs: "25px", lg: "0px" },
             }}
           >
             <Box>
               <img
-                style={{ width: "75%", height: "75%", borderRadius: "25%" }}
+                style={{
+                  width: "75%",
+                  height: "75%",
+                  borderRadius: "25%",
+                }}
                 src="./images/이력서사진.jpg"
               ></img>
             </Box>
@@ -107,7 +112,10 @@ const AboutMeLast = () => {
               >
                 {/* 위쪽 콘텐츠 */}
                 <Grid
-                  sx={{ alignItems: "flex-start", marginLeft: "38px" }}
+                  sx={{
+                    alignItems: "flex-start",
+                    marginLeft: { xs: "15px", lg: "30px" },
+                  }}
                   container
                   direction="column"
                   spacing={2} // 각 항목 간 간격 설정
@@ -116,13 +124,13 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: "20px",
+                        marginRight: { xs: "9px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                       }}
                     >
                       <AccountCircle
                         sx={{
-                          fontSize: { xs: "30px", sm: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -132,7 +140,7 @@ const AboutMeLast = () => {
                         display: "inline",
                         fontFamily: "Gyeonggi_Title_Medium",
                         fontWeight: "bold",
-                        fontSize: { xs: "22px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
@@ -143,8 +151,8 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "20px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "8px", sm: "12px" },
+                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        marginLeft: { xs: "5px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                         fontWeight: "bold",
@@ -157,13 +165,13 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: "20px",
+                        marginRight: { xs: "9px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                       }}
                     >
                       <Event
                         sx={{
-                          fontSize: { xs: "30px", sm: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -173,7 +181,7 @@ const AboutMeLast = () => {
                         display: "inline",
                         fontFamily: "Gyeonggi_Title_Medium",
                         fontWeight: "bold",
-                        fontSize: { xs: "22px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
@@ -184,8 +192,8 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "20px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "8px", sm: "12px" },
+                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        marginLeft: { xs: "5px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                         fontWeight: "bold",
@@ -198,14 +206,14 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: "20px",
+                        marginRight: { xs: "9px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
                     >
                       <Phone
                         sx={{
-                          fontSize: { xs: "30px", sm: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -215,7 +223,7 @@ const AboutMeLast = () => {
                         display: "inline",
                         fontFamily: "Gyeonggi_Title_Medium",
                         fontWeight: "bold",
-                        fontSize: { xs: "22px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
@@ -226,8 +234,8 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "20px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "8px", sm: "12px" },
+                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        marginLeft: { xs: "5px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                         fontWeight: "bold",
@@ -240,14 +248,14 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: "20px",
+                        marginRight: { xs: "9px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
                     >
                       <Mail
                         sx={{
-                          fontSize: { xs: "30px", sm: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -257,7 +265,7 @@ const AboutMeLast = () => {
                         display: "inline",
                         fontFamily: "Gyeonggi_Title_Medium",
                         fontWeight: "bold",
-                        fontSize: { xs: "22px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
@@ -268,8 +276,8 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "20px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "8px", sm: "12px" },
+                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        marginLeft: { xs: "5px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                         fontWeight: "bold",
@@ -282,13 +290,13 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: "20px",
+                        marginRight: { xs: "9px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                       }}
                     >
                       <LocationOn
                         sx={{
-                          fontSize: { xs: "30px", sm: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -298,7 +306,7 @@ const AboutMeLast = () => {
                         display: "inline",
                         fontFamily: "Gyeonggi_Title_Medium",
                         fontWeight: "bold",
-                        fontSize: { xs: "22px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
@@ -309,8 +317,8 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "20px", sm: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "8px", sm: "12px" },
+                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        marginLeft: { xs: "5px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                         fontWeight: "bold",
@@ -331,7 +339,7 @@ const AboutMeLast = () => {
                   justifyContent: "center", // 가로 정렬
                   alignItems: "center", // 세로 정렬
                   backgroundColor: "#F8F8FF", // 테스트용 색상
-                  marginTop: { xs: "15px", sm: "12px" },
+                  marginTop: { xs: "15px", lg: "12px" },
                 }}
               >
                 {/* 아래쪽 콘텐츠 */}
@@ -348,7 +356,7 @@ const AboutMeLast = () => {
                     sx={{
                       textTransform: "none",
                       border: "2px solid black",
-                      fontSize: "17px",
+                      fontSize: { xs: "13px", lg: "17px" },
                       color: "white",
                       background: "#202020",
                       borderRadius: "22px",
@@ -366,7 +374,7 @@ const AboutMeLast = () => {
                     sx={{
                       textTransform: "none",
                       border: "2px solid black",
-                      fontSize: "17px",
+                      fontSize: { xs: "13px", lg: "17px" },
                       color: "white",
                       background: "#202020",
                       borderRadius: "22px",
@@ -384,7 +392,7 @@ const AboutMeLast = () => {
                     sx={{
                       textTransform: "none",
                       border: "2px solid black",
-                      fontSize: "17px",
+                      fontSize: { xs: "13px", lg: "17px" },
                       color: "white",
                       background: "#202020",
                       borderRadius: "22px",

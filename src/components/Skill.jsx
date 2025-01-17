@@ -8,11 +8,11 @@ const Skill = () => {
       sx={{
         width: "100%", // 화면 전체 너비
         // height: "130vh", // 화면 전체 높이
-        height: { xs: "130vh", sm: "100vh" },
+        height: { xs: "130vh", lg: "100vh" },
         display: "flex",
         flexDirection: "column",
         // marginBottom: { xs: 10, sm: 5 }, // 여백 제거
-        marginTop: { xs: 6, sm: 0 },
+        marginTop: { xs: 6, lg: 0 },
         paddingBottom: 4,
         background: "#3E2723",
       }}
@@ -96,13 +96,13 @@ const Skill = () => {
         >
           <Box
             sx={{
-              height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
               boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-              margin: "20px",
+              margin: { xs: "9px", lg: "20px" },
               display: "flex",
               justifyContent: "center", // 가로 방향 가운데 정렬
               alignItems: "center", // 세로 방향 가운데 정렬
@@ -145,7 +145,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 18, sm: 24 }, // 글자 크기
+                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -159,7 +159,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 18, sm: 24 }, // 글자 크기
+                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -170,13 +170,13 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
               boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-              margin: "20px",
+              margin: { xs: "9px", lg: "20px" },
               display: "flex",
               justifyContent: "center", // 가로 방향 가운데 정렬
               alignItems: "center", // 세로 방향 가운데 정렬
@@ -219,7 +219,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 18, sm: 24 }, // 글자 크기
+                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -230,13 +230,13 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
               boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-              margin: "20px",
+              margin: { xs: "9px", lg: "20px" },
               display: "flex",
               justifyContent: "center", // 가로 방향 가운데 정렬
               alignItems: "center", // 세로 방향 가운데 정렬
@@ -279,7 +279,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 18, sm: 24 }, // 글자 크기
+                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -290,13 +290,13 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
               boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-              margin: "20px",
+              margin: { xs: "9px", lg: "20px" },
               display: "flex",
               justifyContent: "center", // 가로 방향 가운데 정렬
               alignItems: "center", // 세로 방향 가운데 정렬
@@ -339,7 +339,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 18, sm: 24 }, // 글자 크기
+                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -361,13 +361,13 @@ const Skill = () => {
           {/* 줄바꿈영역 */}
           <Box
             sx={{
-              height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
               boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-              margin: "20px",
+              margin: { xs: "9px", lg: "20px" },
               display: "flex",
               justifyContent: "center", // 가로 방향 가운데 정렬
               alignItems: "center", // 세로 방향 가운데 정렬
@@ -410,7 +410,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 14, sm: 18 }, // 글자 크기
+                  fontSize: { xs: 14, lg: 18 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -424,7 +424,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 14, sm: 18 }, // 글자 크기
+                  fontSize: { xs: 14, lg: 18 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -438,7 +438,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 14, sm: 18 }, // 글자 크기
+                  fontSize: { xs: 14, lg: 18 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -449,13 +449,13 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
               boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-              margin: "20px",
+              margin: { xs: "9px", lg: "20px" },
               display: "flex",
               justifyContent: "center", // 가로 방향 가운데 정렬
               alignItems: "center", // 세로 방향 가운데 정렬
@@ -498,7 +498,7 @@ const Skill = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   color: "white",
-                  fontSize: { xs: 15, sm: 21 }, // 글자 크기
+                  fontSize: { xs: 15, lg: 21 }, // 글자 크기
                   fontWeight: "bold", // 글자 굵기
                   fontFamily: "yg-jalnan",
                 }}
@@ -509,13 +509,13 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
               boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-              margin: "20px",
+              margin: { xs: "9px", lg: "20px" },
               display: "flex",
               justifyContent: "center", // 가로 방향 가운데 정렬
               alignItems: "center", // 세로 방향 가운데 정렬
@@ -583,13 +583,13 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
               boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-              margin: "20px",
+              margin: { xs: "9px", lg: "20px" },
               display: "flex",
               justifyContent: "center", // 가로 방향 가운데 정렬
               alignItems: "center", // 세로 방향 가운데 정렬
@@ -734,13 +734,13 @@ const Skill = () => {
           >
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -794,13 +794,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -854,13 +854,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -914,13 +914,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -985,13 +985,13 @@ const Skill = () => {
             {/* 줄바꿈영역 */}
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1045,13 +1045,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1105,13 +1105,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1165,13 +1165,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1293,13 +1293,13 @@ const Skill = () => {
           >
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.9)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1353,13 +1353,13 @@ const Skill = () => {
 
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.6)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1414,13 +1414,13 @@ const Skill = () => {
 
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.9)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1487,13 +1487,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.9)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1546,13 +1546,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.9)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1673,13 +1673,13 @@ const Skill = () => {
           >
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.9)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1733,13 +1733,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.9)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1793,13 +1793,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.9)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
@@ -1853,13 +1853,13 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, sm: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
                 boxShadow: "0px 4px 12px 2px rgba(255, 255, 255, 0.9)", // 더 두꺼운 흰색 그림자
-                margin: "20px",
+                margin: { xs: "9px", lg: "20px" },
                 display: "flex",
                 justifyContent: "center", // 가로 방향 가운데 정렬
                 alignItems: "center", // 세로 방향 가운데 정렬
