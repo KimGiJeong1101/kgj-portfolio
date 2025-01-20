@@ -130,7 +130,7 @@ const AboutMeLast = () => {
                     >
                       <AccountCircle
                         sx={{
-                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -171,7 +171,7 @@ const AboutMeLast = () => {
                     >
                       <Event
                         sx={{
-                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -213,7 +213,7 @@ const AboutMeLast = () => {
                     >
                       <Phone
                         sx={{
-                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -255,7 +255,7 @@ const AboutMeLast = () => {
                     >
                       <Mail
                         sx={{
-                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
@@ -296,7 +296,7 @@ const AboutMeLast = () => {
                     >
                       <LocationOn
                         sx={{
-                          fontSize: { xs: "25px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
+                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
                           color: "#3B3B3B",
                         }}
                       />
