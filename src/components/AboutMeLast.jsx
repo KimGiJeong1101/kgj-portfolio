@@ -151,7 +151,7 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         marginLeft: { xs: "4px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
@@ -192,7 +192,7 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         marginLeft: { xs: "4px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
@@ -234,7 +234,7 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         marginLeft: { xs: "4px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
@@ -276,7 +276,7 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         marginLeft: { xs: "4px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
@@ -317,7 +317,7 @@ const AboutMeLast = () => {
                       sx={{
                         display: "inline",
                         fontFamily: "omyu_pretty",
-                        fontSize: { xs: "17px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
                         marginLeft: { xs: "4px", lg: "12px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
