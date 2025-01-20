@@ -10,6 +10,70 @@ import {
   Mail,
 } from "@mui/icons-material";
 
+const iconTypoStyle = {
+  display: "inline",
+  marginRight: { xs: "3px", lg: "20px" },
+  verticalAlign: "middle", // 수직 정렬
+};
+
+const iconStyle = {
+  fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
+  color: "#3B3B3B",
+};
+
+const titleStyle = {
+  display: "inline",
+  fontFamily: "Gyeonggi_Title_Medium",
+  fontWeight: "bold",
+  fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+  verticalAlign: "middle", // 수직 정렬
+  color: "#3B3B3B",
+};
+
+const contentStyle = {
+  display: "inline",
+  fontFamily: "omyu_pretty",
+  fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
+  marginLeft: { xs: "4px", lg: "12px" },
+  verticalAlign: "middle", // 수직 정렬
+  color: "#3B3B3B",
+  fontWeight: "bold",
+};
+
+const aboutButtonStyle = {
+  textTransform: "none",
+  border: "2px solid black",
+  fontSize: { xs: "13px", lg: "17px" },
+  color: "white",
+  background: "#202020",
+  borderRadius: "22px",
+  "&:hover": {
+    backgroundColor: "#F8F8FF", // 호버 시 배경색
+    color: "black", // 호버 시 텍스트 색상
+    textTransform: "none", // 대문자 변환 방지
+  },
+};
+
+// 아이콘, 제목, 내용 배열 (외부로 이동)
+const icons = [
+  <AccountCircle sx={iconStyle} />,
+  <Event sx={iconStyle} />,
+  <Phone sx={iconStyle} />,
+  <Mail sx={iconStyle} />,
+  <LocationOn sx={iconStyle} />,
+];
+const titles = ["이름:", "생년월일:", "연락처:", "이메일:", "위치:"];
+const contents = [
+  "김기정",
+  "1993.11.01",
+  "010 - 2905 - 2325",
+  "odgwmcsoqw@naver.com",
+  "경기 부천시 성곡로",
+];
+
+const buttons = ["skill", "project", "career"];
+const buttonTexts = ["Skill 보기", "Project 보기", "Career 보기"];
+
 const AboutMeLast = () => {
   const handleScroll = (target) => {
     scroller.scrollTo(target, {
@@ -120,213 +184,31 @@ const AboutMeLast = () => {
                   direction="column"
                   spacing={2} // 각 항목 간 간격 설정
                 >
-                  <Grid sx={{ margin: "0px" }} item>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        marginRight: { xs: "3px", lg: "20px" },
-                        verticalAlign: "middle", // 수직 정렬
-                      }}
-                    >
-                      <AccountCircle
+                  {titles.map((title, index) => (
+                    <Grid item>
+                      <Typography
                         sx={{
-                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
-                          color: "#3B3B3B",
+                          ...iconTypoStyle,
                         }}
-                      />
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "Gyeonggi_Title_Medium",
-                        fontWeight: "bold",
-                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                      }}
-                    >
-                      이름:
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "omyu_pretty",
-                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "4px", lg: "12px" },
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      김기정
-                    </Typography>
-                  </Grid>
-                  <Grid item>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        marginRight: { xs: "3px", lg: "20px" },
-                        verticalAlign: "middle", // 수직 정렬
-                      }}
-                    >
-                      <Event
+                      >
+                        {icons[index]}
+                      </Typography>
+                      <Typography
                         sx={{
-                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
-                          color: "#3B3B3B",
+                          ...titleStyle,
                         }}
-                      />
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "Gyeonggi_Title_Medium",
-                        fontWeight: "bold",
-                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                      }}
-                    >
-                      생년월일:
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "omyu_pretty",
-                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "4px", lg: "12px" },
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      1993.11.01
-                    </Typography>
-                  </Grid>
-                  <Grid item>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        marginRight: { xs: "3px", lg: "20px" },
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                      }}
-                    >
-                      <Phone
+                      >
+                        {title}
+                      </Typography>
+                      <Typography
                         sx={{
-                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
-                          color: "#3B3B3B",
+                          ...contentStyle,
                         }}
-                      />
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "Gyeonggi_Title_Medium",
-                        fontWeight: "bold",
-                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                      }}
-                    >
-                      연락처:
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "omyu_pretty",
-                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "4px", lg: "12px" },
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      010 - 2905 - 2325
-                    </Typography>
-                  </Grid>
-                  <Grid item>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        marginRight: { xs: "3px", lg: "20px" },
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                      }}
-                    >
-                      <Mail
-                        sx={{
-                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
-                          color: "#3B3B3B",
-                        }}
-                      />
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "Gyeonggi_Title_Medium",
-                        fontWeight: "bold",
-                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                      }}
-                    >
-                      이메일:
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "omyu_pretty",
-                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "4px", lg: "12px" },
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      odgwmcsoqw@naver.com
-                    </Typography>
-                  </Grid>
-                  <Grid item>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        marginRight: { xs: "3px", lg: "20px" },
-                        verticalAlign: "middle", // 수직 정렬
-                      }}
-                    >
-                      <LocationOn
-                        sx={{
-                          fontSize: { xs: "21px", lg: "50px" }, // 모바일에서는 글자 크기 줄이기
-                          color: "#3B3B3B",
-                        }}
-                      />
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "Gyeonggi_Title_Medium",
-                        fontWeight: "bold",
-                        fontSize: { xs: "18px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                      }}
-                    >
-                      위치:
-                    </Typography>
-                    <Typography
-                      sx={{
-                        display: "inline",
-                        fontFamily: "omyu_pretty",
-                        fontSize: { xs: "16px", lg: "35px" }, // 모바일에서는 글자 크기 줄이기
-                        marginLeft: { xs: "4px", lg: "12px" },
-                        verticalAlign: "middle", // 수직 정렬
-                        color: "#3B3B3B",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      경기 부천시 성곡로
-                    </Typography>
-                  </Grid>
+                      >
+                        {contents[index]}
+                      </Typography>
+                    </Grid>
+                  ))}
                 </Grid>
               </Grid>
 
@@ -351,60 +233,16 @@ const AboutMeLast = () => {
                     gap: "10px", // 버튼 간 간격
                   }}
                 >
-                  <Button
-                    onClick={() => handleScroll("skill")}
-                    sx={{
-                      textTransform: "none",
-                      border: "2px solid black",
-                      fontSize: { xs: "13px", lg: "17px" },
-                      color: "white",
-                      background: "#202020",
-                      borderRadius: "22px",
-                      "&:hover": {
-                        backgroundColor: "#F8F8FF", // 호버 시 배경색
-                        color: "black", // 호버 시 텍스트 색상
-                        textTransform: "none", // 대문자 변환 방지
-                      },
-                    }}
-                  >
-                    Skill 보기
-                  </Button>
-                  <Button
-                    onClick={() => handleScroll("project")}
-                    sx={{
-                      textTransform: "none",
-                      border: "2px solid black",
-                      fontSize: { xs: "13px", lg: "17px" },
-                      color: "white",
-                      background: "#202020",
-                      borderRadius: "22px",
-                      "&:hover": {
-                        backgroundColor: "#F8F8FF", // 호버 시 배경색
-                        color: "black", // 호버 시 텍스트 색상
-                        textTransform: "none", // 대문자 변환 방지
-                      },
-                    }}
-                  >
-                    Project 보기
-                  </Button>
-                  <Button
-                    onClick={() => handleScroll("career")}
-                    sx={{
-                      textTransform: "none",
-                      border: "2px solid black",
-                      fontSize: { xs: "13px", lg: "17px" },
-                      color: "white",
-                      background: "#202020",
-                      borderRadius: "22px",
-                      "&:hover": {
-                        backgroundColor: "#F8F8FF", // 호버 시 배경색
-                        color: "black", // 호버 시 텍스트 색상
-                        textTransform: "none", // 대문자 변환 방지
-                      },
-                    }}
-                  >
-                    Career 보기
-                  </Button>
+                  {buttons.map((button, index) => (
+                    <Button
+                      onClick={() => handleScroll(button)}
+                      sx={{
+                        ...aboutButtonStyle,
+                      }}
+                    >
+                      {buttonTexts[index]}
+                    </Button>
+                  ))}
                 </Grid>
               </Grid>
             </Grid>

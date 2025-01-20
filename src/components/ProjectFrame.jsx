@@ -3,6 +3,30 @@ import TeamProject from "./TeamProject";
 import ToyProject from "./ToyProject";
 import { Box, Button, Grid, Typography } from "@mui/material";
 
+const frameBoxStyle = {
+  background: "#F9F9F9",
+  height: { xs: "80vh", lg: "70vh" },
+  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
+  borderRadius: "130px",
+  margin: 1,
+};
+
+const projectButtonStyle = {
+  marginBottom: "0px",
+  marginTop: "40px",
+  borderRadius: "30px", // 둥근 모서리
+  padding: "8px 30px", // 버튼 크기 조정 (더 커짐)
+  border: "2px solid black", // 테두리 색상
+  color: "#F9F9F9", // 텍스트 색상
+  textTransform: "none", // 대문자 변환 방지
+  fontSize: "1.2rem", // 글자 크기 키우기
+  "&:hover": {
+    backgroundColor: "white", // 호버 시 배경색
+    color: "#202020", // 호버 시 텍스트 색상
+    textTransform: "none", // 대문자 변환 방지
+  },
+};
+
 const ProjectFrame = () => {
   const [projectType, setProjectType] = useState(""); // "toy" or "team"
   const [isVisible, setIsVisible] = useState(false); // 애니메이션 상태 관리
@@ -57,20 +81,8 @@ const ProjectFrame = () => {
         <div style={{ marginBottom: "1rem" }}>
           <Button
             sx={{
-              marginBottom: "0px",
-              marginTop: "40px",
-              borderRadius: "30px", // 둥근 모서리
-              padding: "8px 30px", // 버튼 크기 조정 (더 커짐)
+              ...projectButtonStyle,
               backgroundImage: "linear-gradient(to right, gray,white)",
-              border: "2px solid black", // 테두리 색상
-              color: "#F9F9F9", // 텍스트 색상
-              textTransform: "none", // 대문자 변환 방지
-              fontSize: "1.2rem", // 글자 크기 키우기
-              "&:hover": {
-                backgroundColor: "white", // 호버 시 배경색
-                color: "#202020", // 호버 시 텍스트 색상
-                textTransform: "none", // 대문자 변환 방지
-              },
             }}
             variant="outlined"
             onClick={handleTeamClick}
@@ -80,20 +92,8 @@ const ProjectFrame = () => {
           </Button>
           <Button
             sx={{
-              marginBottom: "0px",
-              marginTop: "40px",
-              borderRadius: "30px", // 둥근 모서리
-              padding: "8px 30px", // 버튼 크기 조정 (더 커짐)
+              ...projectButtonStyle,
               backgroundImage: "linear-gradient(to right, white,gray)",
-              border: "2px solid black", // 테두리 색상
-              color: "#F9F9F9", // 텍스트 색상
-              textTransform: "none", // 대문자 변환 방지
-              fontSize: "1.2rem", // 글자 크기 키우기
-              "&:hover": {
-                backgroundColor: "white", // 호버 시 배경색
-                color: "#202020", // 호버 시 텍스트 색상
-                textTransform: "none", // 대문자 변환 방지
-              },
             }}
             variant="outlined"
             onClick={handleToyClick}
@@ -116,11 +116,7 @@ const ProjectFrame = () => {
         <Grid item xs={12} sm={6}>
           <Box
             sx={{
-              background: "#F9F9F9",
-              height: { xs: "80vh", lg: "70vh" },
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
-              borderRadius: "130px",
-              margin: 1,
+              ...frameBoxStyle,
             }}
           >
             {projectType === "toy" && (
@@ -142,11 +138,7 @@ const ProjectFrame = () => {
         <Grid item xs={12} sm={6}>
           <Box
             sx={{
-              background: "#F9F9F9",
-              height: { xs: "80vh", lg: "70vh" },
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
-              borderRadius: "130px",
-              margin: 1,
+              ...frameBoxStyle,
             }}
           >
             {projectType === "toy" && (
@@ -168,11 +160,7 @@ const ProjectFrame = () => {
         <Grid item xs={12} sm={6}>
           <Box
             sx={{
-              background: "#F9F9F9",
-              height: { xs: "80vh", lg: "70vh" },
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
-              borderRadius: "130px",
-              margin: 1,
+              ...frameBoxStyle,
             }}
           >
             {projectType === "toy" && (
@@ -194,11 +182,7 @@ const ProjectFrame = () => {
         <Grid item xs={12} sm={6}>
           <Box
             sx={{
-              background: "#F9F9F9",
-              height: { xs: "80vh", lg: "70vh" },
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
-              borderRadius: "130px",
-              margin: 1,
+              ...frameBoxStyle,
             }}
           >
             {projectType === "toy" && (
@@ -220,11 +204,7 @@ const ProjectFrame = () => {
         <Grid item xs={12} sm={6}>
           <Box
             sx={{
-              background: "#F9F9F9",
-              height: { xs: "80vh", lg: "70vh" },
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
-              borderRadius: "130px",
-              margin: 1,
+              ...frameBoxStyle,
             }}
           >
             {projectType === "toy" && (
@@ -246,11 +226,7 @@ const ProjectFrame = () => {
         <Grid item xs={12} sm={6}>
           <Box
             sx={{
-              background: "#F9F9F9",
-              height: { xs: "80vh", lg: "70vh" },
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
-              borderRadius: "130px",
-              margin: 1,
+              ...frameBoxStyle,
             }}
           >
             {projectType === "toy" && (

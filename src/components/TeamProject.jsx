@@ -5,45 +5,43 @@ import {
   OndemandVideo as VideoIcon,
   OpenInNew as OpenInNewIcon,
 } from "@mui/icons-material";
-
 import "../App.css";
 
-const TeamProject = ({ teamprojectId, isVisible }) => {
-  // 공통 스타일을 객체로 정의
-  const boxStyle = {
-    border: "solid white 2px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    minHeight: "200px",
-    height: { xs: "80vh", lg: "70vh" },
-    width: "100%",
-    boxSizing: "border-box",
-    opacity: isVisible ? 1 : 0,
-    transition: "opacity 2s ease-in-out",
-    borderRadius: "130px",
-    overflow: "hidden",
-    padding: 0,
-    boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.5)",
-    position: "relative", // 부모 Box에 relative 추가
-  };
+// 공통 스타일을 객체로 정의
+const teamBoxStyle = {
+  border: "solid white 2px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  minHeight: "200px",
+  height: { xs: "80vh", lg: "70vh" },
+  width: "100%",
+  boxSizing: "border-box",
+  opacity: isVisible ? 1 : 0,
+  transition: "opacity 2s ease-in-out",
+  borderRadius: "130px",
+  overflow: "hidden",
+  padding: 0,
+  boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.5)",
+  position: "relative", // 부모 Box에 relative 추가
+  "&:hover": {
+    background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
+  },
+  "&:hover .hover-text": {
+    opacity: 1, // 호버 시 텍스트가 보이도록 설정
+  },
+  "&:hover img": {
+    opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
+  },
+};
 
+const TeamProject = ({ teamprojectId, isVisible }) => {
   return (
     <Container disableGutters maxWidth="lg">
       {teamprojectId === 1 && (
         <Box
           sx={{
-            ...boxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
+            ...teamBoxStyle,
           }}
         >
           <img
@@ -284,17 +282,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
       {teamprojectId === 2 && (
         <Box
           sx={{
-            ...boxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
+            ...teamBoxStyle,
           }}
         >
           <img
@@ -565,17 +553,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
       {teamprojectId === 3 && (
         <Box
           sx={{
-            ...boxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
+            ...teamBoxStyle,
           }}
         >
           <img
@@ -846,17 +824,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
       {teamprojectId === 4 && (
         <Box
           sx={{
-            ...boxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
+            ...teamBoxStyle,
           }}
         >
           <img
@@ -1124,17 +1092,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
       {teamprojectId === 5 && (
         <Box
           sx={{
-            ...boxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
+            ...teamBoxStyle,
           }}
         >
           <Box
@@ -1179,17 +1137,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
       {teamprojectId === 6 && (
         <Box
           sx={{
-            ...boxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
+            ...teamBoxStyle,
           }}
         >
           <Box
