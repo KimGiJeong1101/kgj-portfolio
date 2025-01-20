@@ -7,6 +7,11 @@ import {
 } from "@mui/icons-material";
 import "../App.css";
 
+
+
+const TeamProject = ({ teamprojectId, isVisible }) => {
+
+
 // 공통 스타일을 객체로 정의
 const teamBoxStyle = {
   border: "solid white 2px",
@@ -34,8 +39,10 @@ const teamBoxStyle = {
     opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
   },
 };
+  
 
-const TeamProject = ({ teamprojectId, isVisible }) => {
+
+  
   return (
     <Container disableGutters maxWidth="lg">
       {teamprojectId === 1 && (
