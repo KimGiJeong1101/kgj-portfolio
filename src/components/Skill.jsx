@@ -96,8 +96,8 @@ const Skill = () => {
         >
           <Box
             sx={{
-              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
@@ -170,8 +170,8 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
@@ -230,8 +230,8 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
@@ -290,8 +290,8 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
@@ -361,8 +361,8 @@ const Skill = () => {
           {/* 줄바꿈영역 */}
           <Box
             sx={{
-              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
@@ -449,8 +449,8 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
@@ -509,8 +509,8 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
@@ -583,8 +583,8 @@ const Skill = () => {
           </Box>
           <Box
             sx={{
-              height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-              width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+              width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
               background: "black",
               position: "relative", // 부모 요소에 상대적인 위치 지정
               borderRadius: "18px",
@@ -734,8 +734,8 @@ const Skill = () => {
           >
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -794,8 +794,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -854,8 +854,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -914,8 +914,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -985,8 +985,8 @@ const Skill = () => {
             {/* 줄바꿈영역 */}
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1045,8 +1045,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1105,8 +1105,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1165,8 +1165,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1293,8 +1293,8 @@ const Skill = () => {
           >
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1353,8 +1353,8 @@ const Skill = () => {
 
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1414,8 +1414,8 @@ const Skill = () => {
 
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1487,8 +1487,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1546,8 +1546,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1673,8 +1673,8 @@ const Skill = () => {
           >
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1733,8 +1733,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1793,8 +1793,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",
@@ -1853,8 +1853,8 @@ const Skill = () => {
             </Box>
             <Box
               sx={{
-                height: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
-                width: { xs: 70, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                height: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
+                width: { xs: 65, lg: 100 }, // 모바일에서는 글자 크기 줄이기
                 background: "black",
                 position: "relative", // 부모 요소에 상대적인 위치 지정
                 borderRadius: "18px",

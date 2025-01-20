@@ -114,7 +114,7 @@ const AboutMeLast = () => {
                 <Grid
                   sx={{
                     alignItems: "flex-start",
-                    marginLeft: { xs: "2px", lg: "30px" },
+                    marginLeft: { xs: "0px", lg: "30px" },
                   }}
                   container
                   direction="column"
@@ -124,7 +124,7 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: { xs: "6px", lg: "20px" },
+                        marginRight: { xs: "3px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                       }}
                     >
@@ -165,7 +165,7 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: { xs: "6px", lg: "20px" },
+                        marginRight: { xs: "3px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                       }}
                     >
@@ -206,7 +206,7 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: { xs: "6px", lg: "20px" },
+                        marginRight: { xs: "3px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
@@ -248,7 +248,7 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: { xs: "6px", lg: "20px" },
+                        marginRight: { xs: "3px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                         color: "#3B3B3B",
                       }}
@@ -290,7 +290,7 @@ const AboutMeLast = () => {
                     <Typography
                       sx={{
                         display: "inline",
-                        marginRight: { xs: "6px", lg: "20px" },
+                        marginRight: { xs: "3px", lg: "20px" },
                         verticalAlign: "middle", // 수직 정렬
                       }}
                     >
