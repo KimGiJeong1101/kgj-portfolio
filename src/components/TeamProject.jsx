@@ -16,7 +16,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
     justifyContent: "center",
     alignItems: "center",
     minHeight: "200px",
-    height: "70vh",
+    height: { xs: "80vh", lg: "70vh" },
     width: "100%",
     boxSizing: "border-box",
     opacity: isVisible ? 1 : 0,
@@ -79,7 +79,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -99,11 +99,11 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, sm: 16 },
                 color: "#f9f9f9",
               }}
             >
-              MERN스택을 활용한 소모임 레퍼런스 웹페이지 사이트
+              MERN 스택 활용 소모임 레퍼런스 웹사이트
             </Typography>
 
             {/* 프로젝트 기간 */}
@@ -139,20 +139,19 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                소모임과 문토와 같은 모바일 기반 취미 모임 어플을 벤치마킹하여,
-                웹 버전으로 구현한 사이트입니다. 사용자가 취미 모임을 쉽게
-                생성하고 참여할 수 있도록 서비스를 개발하였습니다.
+                소모임과 문토 같은 취미 모임 앱을 벤치마킹해, 웹에서 취미 모임을
+                쉽게 생성·참여할 수 있는 서비스를 개발했습니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>MongoDB를 사용하여 데이터베이스를 설계, 유연하게 관리</li>
@@ -331,7 +330,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -351,7 +350,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
@@ -391,21 +390,19 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                이 프로젝트는 PM의 가족분이 운영하시는 온라인 쇼핑몰의 디자인과
-                사진을 제공받아 활용하여 개발한 사이트입니다. 이를 바탕으로
-                프로젝트의 목적에 맞는 사용자 경험과 기능 구현을 위해 작업을
-                진행하였습니다.
+                PM 가족의 온라인 쇼핑몰 디자인과 사진을 활용해, 사용자 경험과
+                기능 구현에 중점을 두고 개발한 사이트입니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>
@@ -413,10 +410,10 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   데이터 통신
                 </li>
                 <li>MariaDB로 데이터베이스 관리 및 성능 최적화</li>
-                <li>JPA로 객체-관계 매핑 및 데이터베이스 상호작용 간소화</li>
+                <li>JPA로 ORM 및 DB 상호작용 간소화</li>
                 <li>JWT 토큰으로 안전한 인증 및 세션 관리</li>
                 <li>React로 페이지 전환과 상태 관리 효율화</li>
-                <li>Recoil과 Redux로 전역 상태 관리 및 데이터 흐름 최적화</li>
+                <li>Recoil과 Redux로 전역 상태 관리 최적화</li>
                 <li>
                   주소 API와 소셜 로그인 API로 편리한 로그인 및 주소 자동 완성
                   구현
@@ -614,7 +611,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -634,7 +631,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
@@ -674,30 +671,26 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                과학 분야의 뉴스 기사를 쉽고 가볍게 접할 수 있도록 돕는 뉴스
-                기사 관리 웹 서비스입니다. 해당 서비스는 과학 관련 콘텐츠를
-                효율적으로 제공, 사용자들이 더욱 친숙하게 접근할 수 있도록
-                설계되었습니다.
+                과학 뉴스 기사를 쉽게 접할 수 있도록 돕는 웹 서비스로, 효율적인
+                콘텐츠 제공과 사용자 친화적인 접근을 설계했습니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>
                   Spring MVC 패턴을 사용하여 웹 애플리케이션을 구조적으로 개발
                 </li>
                 <li>Bootstrap 오픈 템플릿을 활용해 유연한 UI를 구현</li>
-                <li>
-                  Spring Security를 사용해 접근 권한을 제어하고 보안을 강화
-                </li>
+                <li>Spring Security로 접근 권한 제어 및 보안 강화</li>
                 <li>Ajax를 활용한 비동기 처리로 댓글 기능을 구현</li>
                 <li>
                   MyBatis를 활용하여 효율적인 DB 관리 및 제어를 구현, 검색
@@ -900,7 +893,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -920,7 +913,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
@@ -960,20 +953,19 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                코로나 시절 동안 소주와 맥주 외의 다양한 술에 대한 관심이 증가한
-                흐름을 반영하여, 사용자들이 쉽게 술에 관한 정보를 접할 수 있도록
-                만든 블로그 프로젝트입니다.
+                코로나 시기, 다양한 술에 대한 관심 증가를 반영한 술 정보 블로그
+                프로젝트입니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>
@@ -982,7 +974,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                 <li>
                   Bootstrap의 다양한 클래스를 활용하여 유연하고 반응형 UI를 구현
                 </li>
-                <li>JavaScript를 사용해 회원가입 및 로그인 로직을 처리</li>
+                <li>JavaScript로 회원가입 및 로그인 로직 처리</li>
                 <li>JSP와 서블릿을 이용해 CRUD 기능을 구현</li>
                 <li>OracleDB와 연결하여 페이징 처리 및 검색 기능을 구현</li>
                 <li>

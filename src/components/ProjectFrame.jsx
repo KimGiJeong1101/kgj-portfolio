@@ -109,7 +109,7 @@ const ProjectFrame = () => {
         sx={{
           background: "#FFF8E1",
           paddingTop: 2,
-          height: { xs: "470vh", sm: "235vh" },
+          height: { xs: "520vh", lg: "235vh" },
         }}
       >
         {/* Box 1 */}
@@ -117,7 +117,7 @@ const ProjectFrame = () => {
           <Box
             sx={{
               background: "#F9F9F9",
-              height: "70vh",
+              height: { xs: "80vh", lg: "70vh" },
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
               borderRadius: "130px",
               margin: 1,
@@ -143,7 +143,7 @@ const ProjectFrame = () => {
           <Box
             sx={{
               background: "#F9F9F9",
-              height: "70vh",
+              height: { xs: "80vh", lg: "70vh" },
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
               borderRadius: "130px",
               margin: 1,
@@ -169,7 +169,7 @@ const ProjectFrame = () => {
           <Box
             sx={{
               background: "#F9F9F9",
-              height: "70vh",
+              height: { xs: "80vh", lg: "70vh" },
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
               borderRadius: "130px",
               margin: 1,
@@ -195,7 +195,7 @@ const ProjectFrame = () => {
           <Box
             sx={{
               background: "#F9F9F9",
-              height: "70vh",
+              height: { xs: "80vh", lg: "70vh" },
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
               borderRadius: "130px",
               margin: 1,
@@ -221,7 +221,7 @@ const ProjectFrame = () => {
           <Box
             sx={{
               background: "#F9F9F9",
-              minHeight: "70vh",
+              height: { xs: "80vh", lg: "70vh" },
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
               borderRadius: "130px",
               margin: 1,
@@ -247,7 +247,7 @@ const ProjectFrame = () => {
           <Box
             sx={{
               background: "#F9F9F9",
-              height: "70vh",
+              height: { xs: "80vh", lg: "70vh" },
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
               borderRadius: "130px",
               margin: 1,

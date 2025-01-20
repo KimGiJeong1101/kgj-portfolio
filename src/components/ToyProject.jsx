@@ -14,7 +14,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
     justifyContent: "center",
     alignItems: "center",
     minHeight: "200px",
-    height: "70vh",
+    height: { xs: "80vh", lg: "70vh" },
     width: "100%",
     boxSizing: "border-box",
     opacity: isVisible ? 1 : 0,
@@ -78,7 +78,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -98,7 +98,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
@@ -138,21 +138,19 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                이 웹페이지는 리액트를 활용하여 제작한 포트폴리오 사이트입니다.
-                다양한 라이브러리를 사용해 반응형 UI를 구현하였으며,
-                애니메이션과 효과를 추가하여 사용자가 재미있고 생동감 있게 느낄
-                수 있도록 다양한 효과와 애니메이션을 더했습니다.
+                리액트로 제작한 포트폴리오 사이트로, 다양한 라이브러리와
+                애니메이션을 활용해 반응형 UI와 생동감 있는 효과를 구현했습니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>
@@ -245,7 +243,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="https://github.com/KimGiJeong1101/kgj-portfolio"
+                  href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -275,7 +273,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   </Box>
                 </a>
                 <a
-                  href="https://kimgijeong1101.github.io/kgj-portfolio/"
+                  href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -360,7 +358,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -380,11 +378,11 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
-              MERN 스택과 PostgreSQL을 활용한 제품 키 관리 웹 사이트
+              MERN 스택과 PostgreSQL로 만든 키 관리 사이트
             </Typography>
 
             {/* 프로젝트 기간 */}
@@ -420,21 +418,20 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                이 사이트는 Windows 키와 Microsoft Office 등 key를 효율적으로
-                관리하기 위해 개발된 사이트입니다. React로 동적 렌더링을
-                최적화하고, Express와 Node.js를 활용해 빠르고 안정적인 서버
-                환경을 구현했습니다
+                Windows 키와 Microsoft Office 등 키 관리를 위한 사이트로,
+                React로 동적 렌더링을 최적화하고, Express와 Node.js로 빠르고
+                안정적인 서버 환경을 구현했습니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>React를 사용해 동적 렌더링을 최적화</li>
@@ -520,7 +517,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="https://github.com/KimGiJeong1101/KeyManager"
+                  href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -549,7 +546,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                     ></GitHubIcon>
                   </Box>
                 </a>
-                {/* <a
+                <a
                   href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -578,7 +575,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                       sx={{ fontSize: { xs: 23, sm: 28 } }}
                     ></VideoIcon>
                   </Box>
-                </a> */}
+                </a>
               </Typography>
             </Box>
           </Box>
@@ -635,7 +632,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -655,11 +652,11 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
-              Java Swing을 활용하여 GUI 기반의 애플리케이션을 개발한 프로젝트
+              Java Swing으로 개발한 GUI Application 프로젝트
             </Typography>
 
             {/* 프로젝트 기간 */}
@@ -695,19 +692,19 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                Java Swing을 활용하여 개발한 프로그램으로, 간단한 학생 관리와
-                도서 관리 기능을 제공하여 학사 업무를 효율적으로 지원합니다
+                Java Swing으로 개발한 프로그램으로, 학생 및 도서 관리 기능을
+                제공해 학사 업무를 효율적으로 지원합니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>
@@ -795,7 +792,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="./images/Haksavideo.mp4"
+                  href="/Haksavideo.mp4"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -880,7 +877,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -900,11 +897,11 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
-              HTML, CSS3, JavaScript를 활용한 데모 사이트 개발
+              HTML, CSS3, JavaScript를 활용한 데모 사이트
             </Typography>
 
             {/* 프로젝트 기간 */}
@@ -940,21 +937,21 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                현대자동차 글로벌 공식 웹사이트를 참고하여 만든 연습용
-                웹페이지로, PC와 모바일에 최적화된 디자인을 제공합니다. 비디오
-                캐러셀을 통해 다양한 콘텐츠를 소개하며, HTML, CSS, JavaScript,
-                Bootstrap, jQuery 등을 활용하여 반응형 웹을 구현했습니다.
+                현대자동차 글로벌 웹사이트를 참고해 만든 연습용 웹페이지로, PC와
+                모바일 최적화된 디자인과 비디오 캐러셀을 통해 다양한 콘텐츠를
+                소개하며, HTML, CSS, JavaScript, Bootstrap, jQuery로 반응형 웹을
+                구현했습니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>Bootstrap을 활용하여 반응형 네비게이션 바 구현</li>
@@ -1039,9 +1036,38 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 }}
               >
                 URL
-              
                 <a
-                  href="https://kimgijeong1101.github.io/kgj-portfolio/hyundai"
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#0073e6",
+                    textDecoration: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: "20px",
+                      height: "20px",
+
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "#202020",
+                      fontSize: "12px",
+                      margin: "5px",
+                    }}
+                  >
+                    <GitHubIcon
+                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                    ></GitHubIcon>
+                  </Box>
+                </a>
+                <a
+                  href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -1126,7 +1152,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -1146,11 +1172,11 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
-              HTML, CSS3, JavaScript를 활용한 데모 사이트 개발
+              HTML, CSS3, JavaScript를 활용한 데모 사이트
             </Typography>
 
             {/* 프로젝트 기간 */}
@@ -1186,21 +1212,21 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                JavaScript, HTML, CSS, Bootstrap, jQuery를 사용하여 개발된
-                연습용 웹페이지로, 글로벌 IT 인재 개발원의 소개, 교육과정 안내,
-                신청 및 오시는 길 정보를 제공합니다. 애니메이션 효과와 카카오
-                지도 API를 활용하여 사용자 경험을 개선하였습니다.
+                JavaScript, HTML, CSS, Bootstrap, jQuery로 개발된 연습용
+                웹페이지로, 글로벌 IT 인재 개발원 소개, 교육과정, 신청, 오시는
+                길 정보를 제공하며, 애니메이션 효과와 카카오 지도 API로 사용자
+                경험을 개선했습니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>Bootstrap을 활용한 반응형 웹 디자인</li>
@@ -1287,9 +1313,38 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 }}
               >
                 URL
-                
                 <a
-                  href="https://kimgijeong1101.github.io/kgj-portfolio/company"
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#0073e6",
+                    textDecoration: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: "20px",
+                      height: "20px",
+
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "#202020",
+                      fontSize: "12px",
+                      margin: "5px",
+                    }}
+                  >
+                    <GitHubIcon
+                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                    ></GitHubIcon>
+                  </Box>
+                </a>
+                <a
+                  href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -1374,7 +1429,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 28, sm: 42 },
+                fontSize: { xs: 20, lg: 42 },
                 fontWeight: "bold",
                 color: "#333",
                 display: "flex",
@@ -1394,11 +1449,11 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 padding: "5px 10px 5px 10px",
 
                 marginBottom: "5px",
-                fontSize: { xs: 12, sm: 16 },
+                fontSize: { xs: 11, lg: 16 },
                 color: "#f9f9f9",
               }}
             >
-              동영상 배경 이미지를 활용한 브랜드 홍보용 웹페이지 제작
+              동영상 배경을 활용한 브랜드 홍보 웹페이지
             </Typography>
 
             {/* 프로젝트 기간 */}
@@ -1434,20 +1489,20 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: 14, sm: 17 },
+                  fontSize: { xs: 12, lg: 17 },
                   margin: "0px",
                   padding: "0px",
                 }}
               >
-                HTML, CSS, JavaScript로 제작된 웹 페이지로, 유튜브 비디오 배경과
-                동적 요소를 사용하여 시각적 효과를 주고, 직관적인 메뉴와 하단
-                콘텐츠 박스를 통해 사용자 경험을 향상시켰습니다.
+                HTML, CSS, JavaScript로 제작된 웹페이지로, 유튜브 비디오 배경과
+                동적 요소로 시각적 효과를 주고, 직관적인 메뉴와 하단 콘텐츠
+                박스로 사용자 경험을 향상시켰습니다.
               </Typography>{" "}
               <Box
                 component="ul"
                 sx={{
                   padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "12px", sm: "15px" },
+                  fontSize: { xs: "11px", lg: "15px" },
                 }}
               >
                 <li>유튜브 비디오를 배경으로 사용하여 동적인 효과 제공</li>
@@ -1530,9 +1585,38 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                 }}
               >
                 URL
-               
                 <a
-                  href="https://kimgijeong1101.github.io/kgj-portfolio/swf"
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#0073e6",
+                    textDecoration: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: "20px",
+                      height: "20px",
+
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "#202020",
+                      fontSize: "12px",
+                      margin: "5px",
+                    }}
+                  >
+                    <GitHubIcon
+                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                    ></GitHubIcon>
+                  </Box>
+                </a>
+                <a
+                  href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
