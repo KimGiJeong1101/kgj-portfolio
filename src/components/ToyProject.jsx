@@ -7,6 +7,11 @@ import {
 } from "@mui/icons-material";
 import "../App.css";
 
+
+
+const ToyProject = ({ toyprojectId, isVisible }) => {
+
+
 // 공통 스타일을 객체로 정의
 const toyBoxStyle = {
   border: "solid white 2px",
@@ -26,7 +31,8 @@ const toyBoxStyle = {
   position: "relative", // 부모 Box에 relative 추가
 };
 
-const ToyProject = ({ toyprojectId, isVisible }) => {
+
+  
   return (
     <Container disableGutters maxWidth="lg">
       {toyprojectId === 1 && (
