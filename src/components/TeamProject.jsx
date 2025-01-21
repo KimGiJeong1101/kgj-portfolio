@@ -6,6 +6,25 @@ import {
   OpenInNew as OpenInNewIcon,
 } from "@mui/icons-material";
 import "../App.css";
+import {
+  teamAfterHover,
+  titleStyle,
+  imgStyle,
+  iconBoxStyle,
+  titleFontStyle,
+  subtitleStyle,
+  dateStyle,
+  hrStyle,
+  detailStyle,
+  ulStyle,
+  skillBoxStyle,
+  skillTitleStyle,
+  urlTitleStyle,
+  skillDisplayStyle,
+  skillValueStyle,
+  anchorStyle,
+  projectLoading,
+} from "../styles/styles";
 
 const TeamProject = ({ teamprojectId, isVisible }) => {
   // 공통 스타일을 객체로 정의
@@ -48,41 +67,22 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             src="./images/Clubing Thumb.png"
             alt="Clubing Thumbnail"
             style={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
+              ...teamAfterHover,
               justifyContent: "flex-start",
               alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               Clubing
@@ -92,13 +92,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, sm: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               MERN 스택 활용 소모임 레퍼런스 웹사이트
@@ -107,9 +101,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2024.08 ~ 2024.09
@@ -118,28 +110,19 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 소모임과 문토 같은 취미 모임 앱을 벤치마킹해, 웹에서 취미 모임을
@@ -148,8 +131,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>MongoDB를 사용하여 데이터베이스를 설계, 유연하게 관리</li>
@@ -173,33 +155,25 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -217,14 +191,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -235,11 +202,8 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -248,28 +212,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></GitHubIcon>
                   </Box>
                 </a>
@@ -289,41 +241,22 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             src="./images/BelleAnge Thumb.png"
             alt="BelleAnge Thumbnail"
             style={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
+              ...teamAfterHover,
               justifyContent: "flex-start",
               alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               BelleAnge
@@ -333,13 +266,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               오픈소스를 활용한 반응형 웹 쇼핑몰 구현
@@ -348,9 +275,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2024.03 ~ 2024.05
@@ -359,28 +284,19 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 PM 가족의 온라인 쇼핑몰 디자인과 사진을 활용해, 사용자 경험과
@@ -389,8 +305,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>
@@ -413,33 +328,25 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -458,14 +365,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -476,11 +376,8 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -489,28 +386,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></GitHubIcon>
                   </Box>
                 </a>
@@ -519,28 +404,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <VideoIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></VideoIcon>
                   </Box>
                 </a>
@@ -560,41 +433,22 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             src="./images/SCON Thumb.png"
             alt="SCON Thumbnail"
             style={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
+              ...teamAfterHover,
               justifyContent: "flex-start",
               alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               SCON
@@ -604,13 +458,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               Spring을 활용한 뉴스기사 관리 웹 서비스
@@ -619,9 +467,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2024.02 ~ 2024.03
@@ -630,28 +476,19 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 과학 뉴스 기사를 쉽게 접할 수 있도록 돕는 웹 서비스로, 효율적인
@@ -660,8 +497,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>
@@ -684,33 +520,25 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -729,14 +557,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -747,11 +568,8 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -760,28 +578,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></GitHubIcon>
                   </Box>
                 </a>
@@ -790,28 +596,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <VideoIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></VideoIcon>
                   </Box>
                 </a>
@@ -831,42 +625,22 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             src="./images/whiskey Thumb.png"
             alt="whiskey Thumbnail"
             style={{
-              width: "100%",
-              height: "100%",
-
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
+              ...teamAfterHover,
               justifyContent: "flex-start",
               alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               위스키백과
@@ -876,13 +650,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               블로그 웹 어플리케이션 사이트 개발
@@ -891,9 +659,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2024.01 ~ 2024.02
@@ -902,28 +668,19 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 코로나 시기, 다양한 술에 대한 관심 증가를 반영한 술 정보 블로그
@@ -932,8 +689,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>
@@ -955,33 +711,25 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -997,14 +745,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -1015,11 +756,8 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -1028,28 +766,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></GitHubIcon>
                   </Box>
                 </a>
@@ -1058,28 +784,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <VideoIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></VideoIcon>
                   </Box>
                 </a>
@@ -1100,31 +814,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             src="./images/proLoading.png"
             alt="프로젝트준비중..."
             sx={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "130px",
-              textAlign: "center",
+              ...projectLoading,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
+              ...teamAfterHover,
               justifyContent: "center",
               alignItems: "center",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
             }}
           >
             <Typography className="typing-text">
@@ -1145,31 +844,16 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
             src="./images/proLoading.png"
             alt="프로젝트준비중..."
             sx={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "130px",
-              textAlign: "center",
+              ...projectLoading,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
+              ...teamAfterHover,
               justifyContent: "center",
               alignItems: "center",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
             }}
           >
             <Typography className="typing-text">

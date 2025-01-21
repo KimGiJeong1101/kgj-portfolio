@@ -6,6 +6,25 @@ import {
   OpenInNew as OpenInNewIcon,
 } from "@mui/icons-material";
 import "../App.css";
+import {
+  toyAfterHover,
+  titleStyle,
+  imgStyle,
+  iconBoxStyle,
+  titleFontStyle,
+  subtitleStyle,
+  dateStyle,
+  hrStyle,
+  detailStyle,
+  ulStyle,
+  skillBoxStyle,
+  skillTitleStyle,
+  urlTitleStyle,
+  skillDisplayStyle,
+  skillValueStyle,
+  anchorStyle,
+  projectLoading,
+} from "../styles/styles";
 
 const ToyProject = ({ toyprojectId, isVisible }) => {
   // 공통 스타일을 객체로 정의
@@ -25,6 +44,15 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
     padding: 0,
     boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.5)",
     position: "relative", // 부모 Box에 relative 추가
+    "&:hover": {
+      background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
+    },
+    "&:hover .hover-text": {
+      opacity: 1, // 호버 시 텍스트가 보이도록 설정
+    },
+    "&:hover img": {
+      opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
+    },
   };
 
   return (
@@ -33,58 +61,26 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
         <Box
           sx={{
             ...toyBoxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
           }}
         >
           <img
             src="./images/portfolio.png"
             alt="portfolio"
             style={{
-              width: "100%",
-              height: "100%",
-
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
+              ...toyAfterHover,
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               포트폴리오 사이트
@@ -94,13 +90,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               React를 활용한 포트폴리오 웹사이트
@@ -109,9 +99,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2025.01
@@ -120,28 +108,19 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 리액트로 제작한 포트폴리오 사이트로, 다양한 라이브러리와
@@ -150,8 +129,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>
@@ -175,33 +153,25 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -217,14 +187,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -235,11 +198,8 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -248,28 +208,16 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></GitHubIcon>
                   </Box>
                 </a>
@@ -278,28 +226,16 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <OpenInNewIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></OpenInNewIcon>
                   </Box>
                 </a>
@@ -313,58 +249,26 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
         <Box
           sx={{
             ...toyBoxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
           }}
         >
           <img
             src="./images/keymanager.png"
             alt="keymanager"
             style={{
-              width: "100%",
-              height: "100%",
-
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
+              ...toyAfterHover,
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               제품키 관리 사이트
@@ -374,13 +278,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               MERN 스택과 PostgreSQL로 만든 키 관리 사이트
@@ -389,9 +287,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2024.10
@@ -400,28 +296,19 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 Windows 키와 Microsoft Office 등 키 관리를 위한 사이트로,
@@ -431,8 +318,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>React를 사용해 동적 렌더링을 최적화</li>
@@ -447,33 +333,25 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -482,23 +360,14 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                     "Material-UI",
                     "Node.js",
                     "Express.js",
-
                     "PostgreSQL",
-
                     "Axios",
                     "RESTful API",
                   ].map((tech, index) => (
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -509,11 +378,8 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -522,61 +388,37 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></GitHubIcon>
                   </Box>
                 </a>
-                <a
+                {/* <a
                   href="https://example.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <VideoIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></VideoIcon>
                   </Box>
-                </a>
+                </a> */}
               </Typography>
             </Box>
           </Box>
@@ -587,58 +429,26 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
         <Box
           sx={{
             ...toyBoxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
           }}
         >
           <img
             src="./images/Haksa.jpg"
             alt="Haksa"
             style={{
-              width: "100%",
-              height: "100%",
-
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
+              ...toyAfterHover,
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               학사관리 프로그램
@@ -648,13 +458,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               Java Swing으로 개발한 GUI Application 프로젝트
@@ -663,9 +467,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2023.12
@@ -674,28 +476,19 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 Java Swing으로 개발한 프로그램으로, 학생 및 도서 관리 기능을
@@ -704,8 +497,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>
@@ -726,33 +518,25 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -766,14 +550,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -784,40 +561,26 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
                 <a
-                  href="/Haksavideo.mp4"
+                  href="./images/Haksavideo.mp4"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <VideoIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></VideoIcon>
                   </Box>
                 </a>
@@ -831,58 +594,26 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
         <Box
           sx={{
             ...toyBoxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
           }}
         >
           <img
             src="./images/hyundai.jpg"
             alt="hyundai"
             style={{
-              width: "100%",
-              height: "100%",
-
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
+              ...toyAfterHover,
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               현대자동차 Demo 사이트
@@ -892,13 +623,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               HTML, CSS3, JavaScript를 활용한 데모 사이트
@@ -907,9 +632,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2023.11
@@ -918,28 +641,19 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 현대자동차 웹사이트를 참고해 만든 반응형 웹페이지로, PC 및
@@ -949,8 +663,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>Bootstrap을 활용하여 반응형 네비게이션 바 구현</li>
@@ -969,33 +682,25 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -1009,14 +714,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -1027,11 +725,8 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -1040,58 +735,16 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
-                    }}
-                  >
-                    <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
-                    ></GitHubIcon>
-                  </Box>
-                </a>
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <OpenInNewIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></OpenInNewIcon>
                   </Box>
                 </a>
@@ -1105,58 +758,26 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
         <Box
           sx={{
             ...toyBoxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
           }}
         >
           <img
             src="./images/kdigital.jpg"
             alt="kdigital"
             style={{
-              width: "100%",
-              height: "100%",
-
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
+              ...toyAfterHover,
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               글로벌IT Demo 사이트
@@ -1166,13 +787,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               HTML, CSS3, JavaScript를 활용한 데모 사이트
@@ -1181,9 +796,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2023.11
@@ -1192,28 +805,19 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 JavaScript, HTML, CSS, Bootstrap, jQuery로 개발된 웹페이지로,
@@ -1223,8 +827,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>Bootstrap을 활용한 반응형 웹 디자인</li>
@@ -1244,33 +847,25 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -1285,14 +880,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -1303,11 +891,8 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -1316,58 +901,16 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
-                    }}
-                  >
-                    <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
-                    ></GitHubIcon>
-                  </Box>
-                </a>
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <OpenInNewIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></OpenInNewIcon>
                   </Box>
                 </a>
@@ -1381,58 +924,26 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
         <Box
           sx={{
             ...toyBoxStyle,
-
-            "&:hover": {
-              background: "#FFFEFC", // 호버 시 박스의 배경색을 green으로 변경
-            },
-            "&:hover .hover-text": {
-              opacity: 1, // 호버 시 텍스트가 보이도록 설정
-            },
-            "&:hover img": {
-              opacity: 0.1, // 호버 시 이미지를 반투명하게 처리
-            },
           }}
         >
           <img
             src="./images/swf.jpg"
             alt="swf"
             style={{
-              width: "100%",
-              height: "100%",
-
-              borderRadius: "130px", // 부모와 동일한 반경 적용
+              ...imgStyle,
             }}
           />
 
           <Box
             className="hover-text"
             sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column", // 세로 정렬
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              opacity: 0,
-              transition: "opacity 2s ease-in-out",
-              background: "rgba(255, 254, 252, 0.9)", // 살짝 투명한 배경
-              borderRadius: "130px",
-              padding: "40px", // 여백 추가
-              boxSizing: "border-box",
+              ...toyAfterHover,
             }}
           >
             {/* 프로젝트 제목 및 아이콘 */}
             <Typography
               sx={{
-                fontSize: { xs: 20, lg: 42 },
-                fontWeight: "bold",
-                color: "#333",
-                display: "flex",
-                alignItems: "center", // 텍스트와 아이콘 수평 정렬
-                marginLeft: "3px",
+                ...titleStyle,
               }}
             >
               브랜드 홍보페이지(SWF)
@@ -1442,13 +953,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
             <Typography
               sx={{
-                background: "#2C3E50",
-                borderRadius: "15px",
-                padding: "5px 10px 5px 10px",
-
-                marginBottom: "5px",
-                fontSize: { xs: 11, lg: 16 },
-                color: "#f9f9f9",
+                ...titleFontStyle,
               }}
             >
               동영상 배경을 활용한 브랜드 홍보 웹페이지
@@ -1457,9 +962,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 프로젝트 기간 */}
             <Typography
               sx={{
-                fontSize: { xs: 12, sm: 14 },
-                color: "#777",
-                marginLeft: "5px",
+                ...dateStyle,
               }}
             >
               2023.11
@@ -1468,28 +971,19 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 프로젝트 상세 설명 */}
             <Typography
               sx={{
-                padding: "0px",
-                margin: "0px",
-                color: "#333",
-                lineHeight: 1.5,
+                ...detailStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: 12, lg: 17 },
-                  margin: "0px",
-                  padding: "0px",
+                  ...subtitleStyle,
                 }}
               >
                 HTML, CSS, JavaScript로 제작된 웹페이지로, 유튜브 비디오 배경과
@@ -1499,8 +993,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               <Box
                 component="ul"
                 sx={{
-                  padding: "0px 0px 0px 15px",
-                  fontSize: { xs: "11px", lg: "15px" },
+                  ...ulStyle,
                 }}
               >
                 <li>유튜브 비디오를 배경으로 사용하여 동적인 효과 제공</li>
@@ -1517,33 +1010,25 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
             {/* 경계선 */}
             <Box
               sx={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#ddd",
-                margin: "20px 0",
+                ...hrStyle,
               }}
             />
 
             {/* 기술 스택 및 URL */}
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "5px",
+                ...skillBoxStyle,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
+                  ...skillTitleStyle,
                 }}
               >
                 기술{" "}
                 <Box
                   sx={{
-                    display: "inline-flex",
-                    gap: "3px",
-                    flexWrap: "wrap", // 여러 개가 줄바꿈 없이 나올 수 있게 설정
+                    ...skillDisplayStyle,
                   }}
                 >
                   {[
@@ -1557,14 +1042,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                     <Box
                       key={index}
                       sx={{
-                        padding: "5px 10px",
-                        border: "1px solid #444444", // 테두리 색상
-                        borderRadius: "20px", // 둥근 테두리
-                        fontSize: { xs: 10, sm: 12 },
-                        color: "#555555",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        ...skillValueStyle,
                       }}
                     >
                       {tech}
@@ -1575,11 +1053,8 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
 
               <Typography
                 sx={{
-                  fontSize: { xs: 12, sm: 18 },
-                  color: "#555",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  ...skillTitleStyle,
+                  ...urlTitleStyle,
                 }}
               >
                 URL
@@ -1588,58 +1063,16 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
+                    ...anchorStyle,
                   }}
                 >
                   <Box
                     sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
-                    }}
-                  >
-                    <GitHubIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
-                    ></GitHubIcon>
-                  </Box>
-                </a>
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: "#0073e6",
-                    textDecoration: "none",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: "20px",
-                      height: "20px",
-
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#202020",
-                      fontSize: "12px",
-                      margin: "5px",
+                      ...iconBoxStyle,
                     }}
                   >
                     <OpenInNewIcon
-                      sx={{ fontSize: { xs: 23, sm: 28 } }}
+                      sx={{ fontSize: { xs: 23, lg: 28 } }}
                     ></OpenInNewIcon>
                   </Box>
                 </a>

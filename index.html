@@ -18,11 +18,18 @@
 
       .cusul li::marker {
         /* color: #cccccc; 마커 색상 */
-        font-size: 22px;
+        font-size: 20px;
       }
 
       .cusul li {
-        font-size: 15px;
+        font-size: 12px !important;
+      }
+
+      /* lg: 1200px 이상 */
+      @media (min-width: 1200px) {
+        .cusul li {
+          font-size: 17px !important;
+        }
       }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

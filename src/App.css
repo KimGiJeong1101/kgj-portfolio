@@ -133,14 +133,14 @@
   border-right: 2px solid;
   width: fit-content;
   animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
-  font-size: 30px !important; /* xs 사이즈 */
+  font-size: 22px !important; /* xs 사이즈 */
 }
 
 /* sm: 600px 이상 */
 @media (min-width: 600px) {
-  .typing-text {
-    font-size: 45px !important; /* 작은 화면 */
-  }
+  /* .typing-text {
+   
+  } */
 }
 
 /* md: 900px 이상 */
@@ -151,8 +151,9 @@
 
 /* lg: 1200px 이상 */
 @media (min-width: 1200px) {
-  /* .typing-text {
-  } */
+  .typing-text {
+    font-size: 45px !important;
+  }
 }
 
 /* xl: 1536px 이상 */

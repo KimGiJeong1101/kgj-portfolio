@@ -77,7 +77,7 @@ const imgSize = {
   transition: "opacity 0.3s",
 };
 
-const afterHover = {
+const skillAfterHover = {
   position: "absolute",
   top: "50%",
   left: "50%",
@@ -170,7 +170,7 @@ const Skill = () => {
             <Box
               className="hover-text"
               sx={{
-                ...afterHover,
+                ...skillAfterHover,
               }}
             >
               <Typography
@@ -207,7 +207,7 @@ const Skill = () => {
             <Box
               className="hover-text"
               sx={{
-                ...afterHover,
+                ...skillAfterHover,
               }}
             >
               <Typography
@@ -235,7 +235,7 @@ const Skill = () => {
             <Box
               className="hover-text"
               sx={{
-                ...afterHover,
+                ...skillAfterHover,
               }}
             >
               <Typography
@@ -263,7 +263,7 @@ const Skill = () => {
             <Box
               className="hover-text"
               sx={{
-                ...afterHover,
+                ...skillAfterHover,
               }}
             >
               <Typography
@@ -302,7 +302,7 @@ const Skill = () => {
             <Box
               className="hover-text"
               sx={{
-                ...afterHover,
+                ...skillAfterHover,
               }}
             >
               <Typography
@@ -348,7 +348,7 @@ const Skill = () => {
             <Box
               className="hover-text"
               sx={{
-                ...afterHover,
+                ...skillAfterHover,
               }}
             >
               <Typography
@@ -376,7 +376,7 @@ const Skill = () => {
             <Box
               className="hover-text"
               sx={{
-                ...afterHover,
+                ...skillAfterHover,
               }}
             >
               <Typography
@@ -413,7 +413,7 @@ const Skill = () => {
             <Box
               className="hover-text"
               sx={{
-                ...afterHover,
+                ...skillAfterHover,
               }}
             >
               <Typography
@@ -497,7 +497,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -525,7 +525,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -553,7 +553,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -581,7 +581,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -620,7 +620,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -648,7 +648,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -676,7 +676,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -704,7 +704,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -769,7 +769,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -798,7 +798,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -827,7 +827,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -864,7 +864,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -892,7 +892,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -957,7 +957,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -985,7 +985,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -1013,7 +1013,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
@@ -1041,7 +1041,7 @@ const Skill = () => {
               <Box
                 className="hover-text"
                 sx={{
-                  ...afterHover,
+                  ...skillAfterHover,
                 }}
               >
                 <Typography
