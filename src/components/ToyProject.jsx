@@ -731,7 +731,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="https://example.com"
+                  href="/kgj-portfolio/hyundai"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -897,7 +897,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="https://example.com"
+                  href="/kgj-portfolio/company"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -1059,7 +1059,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="/swf"
+                  href="/kgj-portfolio/swf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
