@@ -1,6 +1,59 @@
 import React from "react";
 import { Box, Container, List, ListItem, Typography } from "@mui/material";
 
+const titleStyle = {
+  fontWeight: "bold",
+  marginBottom: "10px",
+  color: "#f9f9f9",
+  fontSize: { xs: "17px", lg: "23px" },
+};
+
+const contentSummary = {
+  fontSize: { xs: "14px", lg: "16px" },
+};
+
+const imgBoxStyle = {
+  display: "flex",
+  background: "#f9f9f9",
+  width: "250px",
+  height: "250px",
+  borderRadius: "50%",
+  textAlign: "center",
+  alignItems: "center",
+  justifyContent: "center",
+  overflow: "hidden",
+};
+
+const gridSectionStyle = {
+  display: "flex",
+  flexDirection: { xs: "column", lg: "row" }, // xs에서는 세로, sm 이상에서는 가로
+  background: "#004D40",
+  height: "auto",
+};
+
+const gridOneStyle = {
+  display: "flex",
+  flex: 1,
+  background: "#004D40",
+  padding: "20px",
+  minWidth: "250px",
+  fontWeight: "bold",
+  color: "#202020",
+  textAlign: "center",
+  justifyContent: "center",
+};
+
+const gridThreeStyle = {
+  flex: 3,
+  padding: "20px",
+  background: "#004D40",
+  minWidth: "250px",
+  fontWeight: "bold",
+  color: "#f9f9f9",
+  borderLeft: { xs: "none", lg: "solid 4px #f9f9f9" }, // xs에서는 borderLeft를 없애고, sm 이상에서는 3px 검은색 테두리
+  borderTop: { xs: "solid 4px #f9f9f9", lg: "none" }, // xs에서는 borderTop을 3px 검은색으로, sm 이상에서는 없앰
+};
+
 const Career = () => {
   return (
     <Container disableGutters maxWidth={false}>
@@ -9,9 +62,7 @@ const Career = () => {
         id="career"
         sx={{
           background: "#004D40",
-          // marginTop: "20px",
           padding: "25px",
-          // height: "3px",
           fontFamily: "'Quicksand', sans-serif", // 구글 폰트
           fontSize: "4rem", // 보통 크기
           fontWeight: "bold", // 굵은 글씨
@@ -25,37 +76,17 @@ const Career = () => {
       <Box sx={{ padding: "10px", background: "#004D40" }}>
         <Box
           sx={{
-            display: "flex",
-            flexDirection: { xs: "column", sm: "row" }, // xs에서는 세로, sm 이상에서는 가로
-            background: "#004D40",
-            height: "auto",
+            ...gridSectionStyle,
           }}
         >
           <Box
             sx={{
-              display: "flex",
-              flex: 1,
-              background: "#004D40",
-              padding: "20px",
-              minWidth: "250px",
-              fontWeight: "bold",
-              color: "#202020",
-              textAlign: "center",
-              // alignItems: "center",
-              justifyContent: "center",
+              ...gridOneStyle,
             }}
           >
             <Box
               sx={{
-                display: "flex",
-                background: "#f9f9f9",
-                width: "250px",
-                height: "250px",
-                borderRadius: "50%",
-                textAlign: "center",
-                alignItems: "center",
-                justifyContent: "center",
-                overflow: "hidden",
+                ...imgBoxStyle,
               }}
             >
               <img
@@ -70,22 +101,13 @@ const Career = () => {
           </Box>
           <Box
             sx={{
-              flex: 3,
-              background: "#004D40",
-              padding: "20px",
-              minWidth: "250px",
-              fontWeight: "bold",
-              color: "#202020",
-              borderLeft: { xs: "none", sm: "solid 4px #f9f9f9" }, // xs에서는 borderLeft를 없애고, sm 이상에서는 3px 검은색 테두리
-              borderTop: { xs: "solid 4px #f9f9f9", sm: "none" }, // xs에서는 borderTop을 3px 검은색으로, sm 이상에서는 없앰
+              ...gridThreeStyle,
             }}
           >
             <Typography
               variant="h5"
               sx={{
-                fontWeight: "bold",
-                marginBottom: "10px",
-                color: "#f9f9f9",
+                ...titleStyle,
               }}
             >
               글로벌아이티인재개발원
@@ -98,7 +120,7 @@ const Career = () => {
               }}
             >
               <ListItem sx={{ paddingLeft: "0px", paddingBottom: "0px" }}>
-                <Typography variant="body1">
+                <Typography sx={{ ...contentSummary }} variant="body1">
                   <strong>
                     풀스택 프레임워크(자바, 스프링) 기반 데이터 융합 SW 개발자
                     과정 이수
@@ -153,38 +175,18 @@ const Career = () => {
 
         <Box
           sx={{
-            display: "flex",
-            flexDirection: { xs: "column", sm: "row" }, // xs에서는 세로, sm 이상에서는 가로
-            background: "#004D40",
-            height: "auto",
+            ...gridSectionStyle,
             marginTop: "30px",
           }}
         >
           <Box
             sx={{
-              display: "flex",
-              flex: 1,
-              background: "#004D40",
-              padding: "20px",
-              minWidth: "250px",
-              fontWeight: "bold",
-              color: "#202020",
-              textAlign: "center",
-              // alignItems: "center",
-              justifyContent: "center",
+              ...gridOneStyle,
             }}
           >
             <Box
               sx={{
-                display: "flex",
-                background: "#f9f9f9",
-                width: "250px",
-                height: "250px",
-                borderRadius: "50%",
-                textAlign: "center",
-                alignItems: "center",
-                justifyContent: "center",
-                overflow: "hidden",
+                ...imgBoxStyle,
               }}
             >
               <img
@@ -199,23 +201,13 @@ const Career = () => {
           </Box>
           <Box
             sx={{
-              flex: 3,
-              padding: "20px",
-              background: "#004D40",
-              padding: "20px",
-              minWidth: "250px",
-              fontWeight: "bold",
-              color: "#f9f9f9",
-              borderLeft: { xs: "none", sm: "solid 4px #f9f9f9" }, // xs에서는 borderLeft를 없애고, sm 이상에서는 3px 검은색 테두리
-              borderTop: { xs: "solid 4px #f9f9f9", sm: "none" }, // xs에서는 borderTop을 3px 검은색으로, sm 이상에서는 없앰
+              ...gridThreeStyle,
             }}
           >
             <Typography
               variant="h5"
               sx={{
-                fontWeight: "bold",
-                marginBottom: "10px",
-                color: "#f9f9f9",
+                ...titleStyle,
               }}
             >
               인프런스터디
@@ -228,7 +220,7 @@ const Career = () => {
               }}
             >
               <ListItem sx={{ paddingLeft: "0px", paddingBottom: "0px" }}>
-                <Typography variant="body1">
+                <Typography sx={{ ...contentSummary }} variant="body1">
                   <strong>MERN스택 - 소모임 앱 레퍼런스 웹페이지 개발</strong>
                 </Typography>
               </ListItem>
@@ -287,38 +279,18 @@ const Career = () => {
 
         <Box
           sx={{
-            display: "flex",
-            flexDirection: { xs: "column", sm: "row" }, // xs에서는 세로, sm 이상에서는 가로
-            background: "#004D40",
-            height: "auto",
+            ...gridSectionStyle,
             marginTop: "30px",
           }}
         >
           <Box
             sx={{
-              display: "flex",
-              flex: 1,
-              background: "#004D40",
-              padding: "20px",
-              minWidth: "250px",
-              fontWeight: "bold",
-              color: "#202020",
-              textAlign: "center",
-              // alignItems: "center",
-              justifyContent: "center",
+              ...gridOneStyle,
             }}
           >
             <Box
               sx={{
-                display: "flex",
-                background: "#f9f9f9",
-                width: "250px",
-                height: "250px",
-                borderRadius: "50%",
-                textAlign: "center",
-                alignItems: "center",
-                justifyContent: "center",
-                overflow: "hidden",
+                ...imgBoxStyle,
               }}
             >
               <img
@@ -333,26 +305,16 @@ const Career = () => {
           </Box>
           <Box
             sx={{
-              flex: 3,
-              padding: "20px",
-              background: "#004D40",
-              padding: "20px",
-              minWidth: "250px",
-              fontWeight: "bold",
-              color: "#f9f9f9",
-              borderLeft: { xs: "none", sm: "solid 4px #f9f9f9" }, // xs에서는 borderLeft를 없애고, sm 이상에서는 3px 검은색 테두리
-              borderTop: { xs: "solid 4px #f9f9f9", sm: "none" }, // xs에서는 borderTop을 3px 검은색으로, sm 이상에서는 없앰
+              ...gridThreeStyle,
             }}
           >
             <Typography
               variant="h5"
               sx={{
-                fontWeight: "bold",
-                marginBottom: "10px",
-                color: "#f9f9f9",
+                ...titleStyle,
               }}
             >
-              웰컴에프앤디 ICT본부 개발망 및 업무망 분리 구축 (상주 근무)
+              웰컴에프앤디 ICT본부 개발/업무망 분리 (상주)
             </Typography>
             <List
               sx={{
@@ -362,11 +324,10 @@ const Career = () => {
               }}
             >
               <ListItem sx={{ paddingLeft: "0px", paddingBottom: "0px" }}>
-                <Typography variant="body1">
+                <Typography sx={{ ...contentSummary }} variant="body1">
                   <strong>
-                    보안 이슈로 인하여, 기존 내부/외부망 시스템에서 내부망을
-                    분리. 신규 PC 도입 후, 내부망을 업무용 사내망과 개발 전용
-                    망으로 나누어 망 분리를 완료
+                    보안 이슈로 내부망을 업무용과 개발용으로 분리, 신규 PC 도입
+                    후 망 분리 완료
                   </strong>
                 </Typography>
               </ListItem>
@@ -413,12 +374,10 @@ const Career = () => {
             <Typography
               variant="h5"
               sx={{
-                fontWeight: "bold",
-                marginBottom: "10px",
-                color: "#f9f9f9",
+                ...titleStyle,
               }}
             >
-              Windows 10 업그레이드 및 소프트웨어 환경 구축 (상주 근무)
+              Windows10 Upgrade 및 소프트웨어 구축 (상주)
             </Typography>
             <List
               sx={{
@@ -428,11 +387,10 @@ const Career = () => {
               }}
             >
               <ListItem sx={{ paddingLeft: "0px", paddingBottom: "0px" }}>
-                <Typography variant="body1">
+                <Typography sx={{ ...contentSummary }} variant="body1">
                   <strong>
-                    Windows 7 보안 지원 중단에 따라, 웰컴금융그룹 계열사
-                    직원들의 PC를 Windows 10으로 업그레이드하거나 포맷 작업을
-                    진행. 이후, PC 내부에 필요한 소프트웨어 환경을 구축
+                    Windows 7 지원 중단에 따라, 웰컴금융그룹 직원들의 PC를
+                    Windows 10으로 업그레이드하고 소프트웨어 환경 구축
                   </strong>
                 </Typography>
               </ListItem>
@@ -477,12 +435,10 @@ const Career = () => {
             <Typography
               variant="h5"
               sx={{
-                fontWeight: "bold",
-                marginBottom: "10px",
-                color: "#f9f9f9",
+                ...titleStyle,
               }}
             >
-              웰컴캐피탈 보안 이슈 대응을 위한 망 분리 (상주 근무)
+              웰컴캐피탈 보안 이슈 대응을 위한 망 분리 (상주)
             </Typography>
             <List
               sx={{
@@ -492,12 +448,11 @@ const Career = () => {
               }}
             >
               <ListItem sx={{ paddingLeft: "0px", paddingBottom: "0px" }}>
-                <Typography variant="body1">
+                <Typography sx={{ ...contentSummary }} variant="body1">
                   <strong>
-                    웰컴캐피탈의 회사 정책 변경으로 보안 이슈가 발생하여,
-                    기존에는 하나의 PC에서 외부망과 내부망을 사용했으나, 망
-                    분리를 위해 신규 PC 도입 및 세팅을 진행하고, 기존 PC는 포맷
-                    후 재설정
+                    웰컴캐피탈의 보안 이슈로 인해 기존 외부망·내부망 통합 PC를
+                    망 분리하여, 신규 PC를 도입·세팅하고 기존 PC는 포맷 후
+                    재설정
                   </strong>
                 </Typography>
               </ListItem>

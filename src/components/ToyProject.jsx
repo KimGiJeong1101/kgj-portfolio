@@ -7,32 +7,26 @@ import {
 } from "@mui/icons-material";
 import "../App.css";
 
-
-
 const ToyProject = ({ toyprojectId, isVisible }) => {
+  // 공통 스타일을 객체로 정의
+  const toyBoxStyle = {
+    border: "solid white 2px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "200px",
+    height: { xs: "80vh", lg: "70vh" },
+    width: "100%",
+    boxSizing: "border-box",
+    opacity: isVisible ? 1 : 0,
+    transition: "opacity 2s ease-in-out",
+    borderRadius: "130px",
+    overflow: "hidden",
+    padding: 0,
+    boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.5)",
+    position: "relative", // 부모 Box에 relative 추가
+  };
 
-
-// 공통 스타일을 객체로 정의
-const toyBoxStyle = {
-  border: "solid white 2px",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  minHeight: "200px",
-  height: { xs: "80vh", lg: "70vh" },
-  width: "100%",
-  boxSizing: "border-box",
-  opacity: isVisible ? 1 : 0,
-  transition: "opacity 2s ease-in-out",
-  borderRadius: "130px",
-  overflow: "hidden",
-  padding: 0,
-  boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.5)",
-  position: "relative", // 부모 Box에 relative 추가
-};
-
-
-  
   return (
     <Container disableGutters maxWidth="lg">
       {toyprojectId === 1 && (
@@ -814,7 +808,6 @@ const toyBoxStyle = {
                     sx={{
                       width: "20px",
                       height: "20px",
-
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
@@ -949,10 +942,9 @@ const toyBoxStyle = {
                   padding: "0px",
                 }}
               >
-                현대자동차 글로벌 웹사이트를 참고해 만든 연습용 웹페이지로, PC와
-                모바일 최적화된 디자인과 비디오 캐러셀을 통해 다양한 콘텐츠를
-                소개하며, HTML, CSS, JavaScript, Bootstrap, jQuery로 반응형 웹을
-                구현했습니다.
+                현대자동차 웹사이트를 참고해 만든 반응형 웹페이지로, PC 및
+                모바일 최적화 디자인과 비디오 캐러셀을 사용해 콘텐츠를 소개하며,
+                HTML, CSS, JavaScript, Bootstrap, jQuery로 구현했습니다.
               </Typography>{" "}
               <Box
                 component="ul"
@@ -1167,7 +1159,7 @@ const toyBoxStyle = {
                 marginLeft: "3px",
               }}
             >
-              글로벌IT인재개발원 Demo 사이트
+              글로벌IT Demo 사이트
             </Typography>
 
             {/* 프로젝트 간략 설명 */}
@@ -1224,10 +1216,9 @@ const toyBoxStyle = {
                   padding: "0px",
                 }}
               >
-                JavaScript, HTML, CSS, Bootstrap, jQuery로 개발된 연습용
-                웹페이지로, 글로벌 IT 인재 개발원 소개, 교육과정, 신청, 오시는
-                길 정보를 제공하며, 애니메이션 효과와 카카오 지도 API로 사용자
-                경험을 개선했습니다.
+                JavaScript, HTML, CSS, Bootstrap, jQuery로 개발된 웹페이지로,
+                글로벌 IT 인재 개발원 소개, 교육과정, 신청, 오시는 길을
+                제공하며, 카카오 지도 API와 애니메이션 효과로 UX를 개선했습니다.
               </Typography>{" "}
               <Box
                 component="ul"
@@ -1502,8 +1493,8 @@ const toyBoxStyle = {
                 }}
               >
                 HTML, CSS, JavaScript로 제작된 웹페이지로, 유튜브 비디오 배경과
-                동적 요소로 시각적 효과를 주고, 직관적인 메뉴와 하단 콘텐츠
-                박스로 사용자 경험을 향상시켰습니다.
+                동적 요소로 시각적 효과를 주고, 직관적인 메뉴와 하단 콘텐츠로
+                UX를 향상시켰습니다.
               </Typography>{" "}
               <Box
                 component="ul"
