@@ -1059,7 +1059,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
               >
                 URL
                 <a
-                  href="https://example.com"
+                  href="/swf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
