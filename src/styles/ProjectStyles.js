@@ -1,3 +1,31 @@
+// ProjectFrame 스타일
+
+export const frameBoxStyle = {
+  background: "#F9F9F9",
+  height: { xs: "80vh", lg: "70vh" },
+  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
+  borderRadius: "130px",
+  margin: 1,
+};
+
+export const projectButtonStyle = {
+  marginBottom: "0px",
+  marginTop: "40px",
+  borderRadius: "30px", // 둥근 모서리
+  padding: "8px 30px", // 버튼 크기 조정 (더 커짐)
+  border: "2px solid black", // 테두리 색상
+  color: "#F9F9F9", // 텍스트 색상
+  textTransform: "none", // 대문자 변환 방지
+  fontSize: "1.2rem", // 글자 크기 키우기
+  "&:hover": {
+    backgroundColor: "white", // 호버 시 배경색
+    color: "#202020", // 호버 시 텍스트 색상
+    textTransform: "none", // 대문자 변환 방지
+  },
+};
+
+// ""Project 스타일
+
 export const teamAfterHover = {
   position: "absolute",
   top: 0,

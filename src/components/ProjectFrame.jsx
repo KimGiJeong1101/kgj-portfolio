@@ -2,30 +2,9 @@ import React, { useState } from "react";
 import TeamProject from "./TeamProject";
 import ToyProject from "./ToyProject";
 import { Box, Button, Grid, Typography } from "@mui/material";
+import { frameBoxStyle, projectButtonStyle } from "../styles/ProjectStyles";
 
-const frameBoxStyle = {
-  background: "#F9F9F9",
-  height: { xs: "80vh", lg: "70vh" },
-  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
-  borderRadius: "130px",
-  margin: 1,
-};
-
-const projectButtonStyle = {
-  marginBottom: "0px",
-  marginTop: "40px",
-  borderRadius: "30px", // 둥근 모서리
-  padding: "8px 30px", // 버튼 크기 조정 (더 커짐)
-  border: "2px solid black", // 테두리 색상
-  color: "#F9F9F9", // 텍스트 색상
-  textTransform: "none", // 대문자 변환 방지
-  fontSize: "1.2rem", // 글자 크기 키우기
-  "&:hover": {
-    backgroundColor: "white", // 호버 시 배경색
-    color: "#202020", // 호버 시 텍스트 색상
-    textTransform: "none", // 대문자 변환 방지
-  },
-};
+const projectIndex = [1, 2, 3, 4, 5, 6];
 
 const ProjectFrame = () => {
   const [projectType, setProjectType] = useState(""); // "toy" or "team"
@@ -112,137 +91,28 @@ const ProjectFrame = () => {
           height: { xs: "520vh", lg: "235vh" },
         }}
       >
-        {/* Box 1 */}
-        <Grid item xs={12} sm={6}>
-          <Box
-            sx={{
-              ...frameBoxStyle,
-            }}
-          >
-            {projectType === "toy" && (
-              <ToyProject
-                toyprojectId={1}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-            {projectType === "team" && (
-              <TeamProject
-                teamprojectId={1}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-          </Box>
-        </Grid>
-
-        {/* Box 2 */}
-        <Grid item xs={12} sm={6}>
-          <Box
-            sx={{
-              ...frameBoxStyle,
-            }}
-          >
-            {projectType === "toy" && (
-              <ToyProject
-                toyprojectId={2}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-            {projectType === "team" && (
-              <TeamProject
-                teamprojectId={2}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-          </Box>
-        </Grid>
-
-        {/* Box 3 */}
-        <Grid item xs={12} sm={6}>
-          <Box
-            sx={{
-              ...frameBoxStyle,
-            }}
-          >
-            {projectType === "toy" && (
-              <ToyProject
-                toyprojectId={3}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-            {projectType === "team" && (
-              <TeamProject
-                teamprojectId={3}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-          </Box>
-        </Grid>
-
-        {/* Box 4 */}
-        <Grid item xs={12} sm={6}>
-          <Box
-            sx={{
-              ...frameBoxStyle,
-            }}
-          >
-            {projectType === "toy" && (
-              <ToyProject
-                toyprojectId={4}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-            {projectType === "team" && (
-              <TeamProject
-                teamprojectId={4}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-          </Box>
-        </Grid>
-
-        {/* Box 5 */}
-        <Grid item xs={12} sm={6}>
-          <Box
-            sx={{
-              ...frameBoxStyle,
-            }}
-          >
-            {projectType === "toy" && (
-              <ToyProject
-                toyprojectId={5}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-            {projectType === "team" && (
-              <TeamProject
-                teamprojectId={5}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-          </Box>
-        </Grid>
-
-        {/* Box 6 */}
-        <Grid item xs={12} sm={6}>
-          <Box
-            sx={{
-              ...frameBoxStyle,
-            }}
-          >
-            {projectType === "toy" && (
-              <ToyProject
-                toyprojectId={6}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-            {projectType === "team" && (
-              <TeamProject
-                teamprojectId={6}
-                isVisible={isVisible} // 애니메이션 상태 전달
-              />
-            )}
-          </Box>
-        </Grid>
+        {projectIndex.map((project, index) => (
+          <Grid item xs={12} sm={6}>
+            <Box
+              sx={{
+                ...frameBoxStyle,
+              }}
+            >
+              {projectType === "toy" && (
+                <ToyProject
+                  toyprojectId={project}
+                  isVisible={isVisible} // 애니메이션 상태 전달
+                />
+              )}
+              {projectType === "team" && (
+                <TeamProject
+                  teamprojectId={project}
+                  isVisible={isVisible} // 애니메이션 상태 전달
+                />
+              )}
+            </Box>
+          </Grid>
+        ))}
       </Grid>
     </>
   );

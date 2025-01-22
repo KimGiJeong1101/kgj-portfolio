@@ -24,7 +24,7 @@ import {
   skillValueStyle,
   anchorStyle,
   projectLoading,
-} from "../styles/styles";
+} from "../styles/ProjectStyles";
 
 const TeamProject = ({ teamprojectId, isVisible }) => {
   // 공통 스타일을 객체로 정의
