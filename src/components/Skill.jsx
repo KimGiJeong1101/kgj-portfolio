@@ -11,6 +11,11 @@ import {
   hoverFontStyle,
 } from "../styles/SkillStyle";
 
+import toolData from "../jsondata/developtool-data.json";
+import frontendData from "../jsondata/frontendskill-data.json";
+import backendData from "../jsondata/backendskill-data.json";
+import databaseData from "../jsondata/databaseskill-data.json";
+
 const Skill = () => {
   return (
     <Box
@@ -71,285 +76,75 @@ const Skill = () => {
             flexWrap: "wrap", // 줄바꿈을 허용
           }}
         >
-          <Box
-            sx={{
-              ...skillImgStyle,
-            }}
-          >
-            <img
-              src="./images/vscode.png"
-              alt="VS-Code"
-              style={{
-                ...imgSize,
-              }}
-            />
-            <Box
-              className="hover-text"
-              sx={{
-                ...skillAfterHover,
-              }}
-            >
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
-                }}
-              >
-                VS
-              </Typography>
+          {/* Developer Tools영역 */}
 
-              <Typography
+          {toolData.map((item, index) => (
+            <React.Fragment key={item.id}>
+              {/* 이미지와 텍스트 */}
+              <Box
                 sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
+                  ...skillImgStyle,
                 }}
               >
-                Code
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              ...skillImgStyle,
-            }}
-          >
-            <img
-              src="./images/IntelliJ.png"
-              alt="IntelliJ"
-              style={{
-                ...imgSize,
-              }}
-            />
-            <Box
-              className="hover-text"
-              sx={{
-                ...skillAfterHover,
-              }}
-            >
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
-                }}
-              >
-                IntelliJ
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              ...skillImgStyle,
-            }}
-          >
-            <img
-              src="./images/eclipse.png"
-              alt="Eclipse"
-              style={{
-                ...imgSize,
-              }}
-            />
-            <Box
-              className="hover-text"
-              sx={{
-                ...skillAfterHover,
-              }}
-            >
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
-                }}
-              >
-                Eclipse
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              ...skillImgStyle,
-            }}
-          >
-            <img
-              src="./images/git.png"
-              alt="Git"
-              style={{
-                ...imgSize,
-              }}
-            />
-            <Box
-              className="hover-text"
-              sx={{
-                ...skillAfterHover,
-              }}
-            >
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 18, lg: 24 }, // 글자 크기
-                }}
-              >
-                Git
-              </Typography>
-            </Box>
-          </Box>
-          {/* 줄바꿈영역 */}
-          <Box
-            sx={{
-              height: "16px",
-              display: "block",
-              flex: "0 0 100%",
-              margin: "-10px",
-            }}
-          />{" "}
-          {/* 빈 공간 추가 */}
-          {/* 줄바꿈영역 */}
-          <Box
-            sx={{
-              ...skillImgStyle,
-            }}
-          >
-            <img
-              src="./images/OracleDeTool.png"
-              alt="Oracle SQL Developer"
-              style={{
-                ...imgSize,
-              }}
-            />
-            <Box
-              className="hover-text"
-              sx={{
-                ...skillAfterHover,
-              }}
-            >
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 14, lg: 18 }, // 글자 크기
-                }}
-              >
-                Oracle
-              </Typography>
+                <img
+                  src={`./images/${item.imgName}.png`}
+                  alt={item.imgName}
+                  style={{
+                    ...imgSize,
+                  }}
+                />
+                <Box
+                  className="hover-text"
+                  sx={{
+                    ...skillAfterHover,
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      ...hoverFontStyle,
+                      fontSize: item.firstTextFont, // 글자 크기
+                    }}
+                  >
+                    {item.firstText}
+                  </Typography>
 
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 14, lg: 18 }, // 글자 크기
-                }}
-              >
-                SQL
-              </Typography>
+                  {item.textCount >= 2 && (
+                    <Typography
+                      sx={{
+                        ...hoverFontStyle,
+                        fontSize: item.secondTextFont, // 글자 크기
+                      }}
+                    >
+                      {item.secondText}
+                    </Typography>
+                  )}
 
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 14, lg: 18 }, // 글자 크기
-                }}
-              >
-                Developer
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              ...skillImgStyle,
-            }}
-          >
-            <img
-              src="./images/HeidiSQL.png"
-              alt="HeidiSQL"
-              style={{
-                ...imgSize,
-              }}
-            />
-            <Box
-              className="hover-text"
-              sx={{
-                ...skillAfterHover,
-              }}
-            >
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 15, lg: 21 }, // 글자 크기
-                }}
-              >
-                HeidiSQL
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              ...skillImgStyle,
-            }}
-          >
-            <img
-              src="./images/compass.png"
-              alt="MongoDBCompass"
-              style={{
-                ...imgSize,
-              }}
-            />
-            <Box
-              className="hover-text"
-              sx={{
-                ...skillAfterHover,
-              }}
-            >
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 13, lg: 18 }, // 글자 크기
-                }}
-              >
-                MongoDB
-              </Typography>
+                  {item.textCount === 3 && (
+                    <Typography
+                      sx={{
+                        ...hoverFontStyle,
+                        fontSize: item.thirdTextFont, // 글자 크기
+                      }}
+                    >
+                      {item.thirdText}
+                    </Typography>
+                  )}
+                </Box>
+              </Box>
 
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 13, lg: 18 }, // 글자 크기
-                }}
-              >
-                Compass
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              ...skillImgStyle,
-            }}
-          >
-            <img
-              src="./images/SourceTree.png"
-              alt="SourceTree"
-              style={{
-                ...imgSize,
-              }}
-            />
-            <Box
-              className="hover-text"
-              sx={{
-                ...skillAfterHover,
-              }}
-            >
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 17, lg: 24 }, // 글자 크기
-                }}
-              >
-                Source
-              </Typography>
-              <Typography
-                sx={{
-                  ...hoverFontStyle,
-                  fontSize: { xs: 17, lg: 24 }, // 글자 크기
-                }}
-              >
-                Tree
-              </Typography>
-            </Box>
-          </Box>
+              {/* 줄바꿈 영역 추가 */}
+              {(index + 1) % 4 === 0 && index !== toolData.length - 1 && (
+                <Box
+                  sx={{
+                    height: "16px",
+                    display: "block",
+                    flex: "0 0 100%",
+                    margin: "-10px",
+                  }}
+                />
+              )}
+            </React.Fragment>
+          ))}
         </Box>
       </Box>
 
@@ -370,7 +165,6 @@ const Skill = () => {
           sx={{
             ...skillCategoryBoxStyle,
             width: "100%", // 모바일에서 너비 100%
-
             margin: { xs: 0, lg: 1 },
             marginTop: { xs: 1, lg: 0 },
           }}
@@ -398,243 +192,79 @@ const Skill = () => {
               flexWrap: "wrap",
             }}
           >
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/React.png"
-                alt="React"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
+            {/* FrontEnd Tools영역 */}
+
+            {frontendData.map((item, index) => (
+              <React.Fragment key={item.id}>
+                {/* 이미지와 텍스트 */}
+                <Box
                   sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 19, lg: 26 }, // 글자 크기
+                    ...skillImgStyle,
                   }}
                 >
-                  React
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/javascript.png"
-                alt="JavaScript"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 13, lg: 18 }, // 글자 크기
-                  }}
-                >
-                  JavaScript
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/ajax.png"
-                alt="AJAX"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 19, lg: 26 }, // 글자 크기
-                  }}
-                >
-                  AJAX
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/jquery.png"
-                alt="jQuery"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 17, lg: 23 }, // 글자 크기
-                  }}
-                >
-                  jQuery
-                </Typography>
-              </Box>
-            </Box>
-            {/* 줄바꿈영역 */}
-            <Box
-              sx={{
-                height: "16px",
-                display: "block",
-                flex: "0 0 100%",
-                margin: "-10px",
-              }}
-            />{" "}
-            {/* 빈 공간 추가 */}
-            {/* 줄바꿈영역 */}
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/html.png"
-                alt="HTML"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 17, lg: 26 }, // 글자 크기
-                  }}
-                >
-                  HTML
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/css3.png"
-                alt="CSS3"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 17, lg: 26 }, // 글자 크기
-                  }}
-                >
-                  CSS3
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/bootstrap.png"
-                alt="BootStrap"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 13, lg: 19 }, // 글자 크기
-                  }}
-                >
-                  BootStrap
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/JSP.png"
-                alt="JSP"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 20, lg: 27 }, // 글자 크기
-                  }}
-                >
-                  JSP
-                </Typography>
-              </Box>
-            </Box>
+                  <img
+                    src={`./images/${item.imgName}.png`}
+                    alt={item.imgName}
+                    style={{
+                      ...imgSize,
+                    }}
+                  />
+                  <Box
+                    className="hover-text"
+                    sx={{
+                      ...skillAfterHover,
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        ...hoverFontStyle,
+                        fontSize: item.firstTextFont, // 글자 크기
+                      }}
+                    >
+                      {item.firstText}
+                    </Typography>
+
+                    {item.textCount >= 2 && (
+                      <Typography
+                        sx={{
+                          ...hoverFontStyle,
+                          fontSize: item.secondTextFont, // 글자 크기
+                        }}
+                      >
+                        {item.secondText}
+                      </Typography>
+                    )}
+
+                    {item.textCount === 3 && (
+                      <Typography
+                        sx={{
+                          ...hoverFontStyle,
+                          fontSize: item.thirdTextFont, // 글자 크기
+                        }}
+                      >
+                        {item.thirdText}
+                      </Typography>
+                    )}
+                  </Box>
+                </Box>
+
+                {/* 줄바꿈 영역 추가 */}
+                {(index + 1) % 4 === 0 && index !== frontendData.length - 1 && (
+                  <Box
+                    sx={{
+                      height: "16px",
+                      display: "block",
+                      flex: "0 0 100%",
+                      margin: "-10px",
+                    }}
+                  />
+                )}
+              </React.Fragment>
+            ))}
           </Box>
         </Box>
+
+        {/* FrontEnd Tools영역 끝 */}
 
         {/* FrontEnd 영역 끝 */}
 
@@ -670,157 +300,58 @@ const Skill = () => {
               flex: 3, // 3 비율
             }}
           >
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/java.png"
-                alt="JAVA"
-                style={{
-                  ...imgSize,
-                }}
-              />
+            {backendData.map((item, index) => (
               <Box
-                className="hover-text"
                 sx={{
-                  ...skillAfterHover,
+                  ...skillImgStyle,
                 }}
               >
-                <Typography
+                <img
+                  src={`./images/${item.imgName}.png`}
+                  alt={item.imgName}
+                  style={{
+                    ...imgSize,
+                  }}
+                />
+                <Box
+                  className="hover-text"
                   sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 20, lg: 27 }, // 글자 크기
+                    ...skillAfterHover,
                   }}
                 >
-                  JAVA
-                </Typography>
-              </Box>
-            </Box>
+                  <Typography
+                    sx={{
+                      ...hoverFontStyle,
+                      fontSize: item.firstTextFont, // 글자 크기
+                    }}
+                  >
+                    {item.firstText}
+                  </Typography>
 
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/spring.png"
-                alt="Spring"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 15, lg: 24 }, // 글자 크기
-                  }}
-                >
-                  Spring
-                </Typography>
-              </Box>
-            </Box>
+                  {item.textCount >= 2 && (
+                    <Typography
+                      sx={{
+                        ...hoverFontStyle,
+                        fontSize: item.secondTextFont, // 글자 크기
+                      }}
+                    >
+                      {item.secondText}
+                    </Typography>
+                  )}
 
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/springboot.png"
-                alt="SpringBoot"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 15, lg: 24 }, // 글자 크기
-                  }}
-                >
-                  Spring
-                </Typography>
-
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 15, lg: 24 }, // 글자 크기
-                  }}
-                >
-                  Boot
-                </Typography>
+                  {item.textCount === 3 && (
+                    <Typography
+                      sx={{
+                        ...hoverFontStyle,
+                        fontSize: item.thirdTextFont, // 글자 크기
+                      }}
+                    >
+                      {item.thirdText}
+                    </Typography>
+                  )}
+                </Box>
               </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/nodeJS.png"
-                alt="NodeJS"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 14, lg: 22 }, // 글자 크기
-                  }}
-                >
-                  NodeJS
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/expressJS.png"
-                alt="ExpressJS"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 10, lg: 18 }, // 글자 크기
-                  }}
-                >
-                  ExpressJS
-                </Typography>
-              </Box>
-            </Box>
+            ))}
           </Box>
         </Box>
 
@@ -858,118 +389,58 @@ const Skill = () => {
               flex: 3, // 3 비율
             }}
           >
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/OracleDB.png"
-                alt="OracleDB"
-                style={{
-                  ...imgSize,
-                }}
-              />
+            {databaseData.map((item, index) => (
               <Box
-                className="hover-text"
                 sx={{
-                  ...skillAfterHover,
+                  ...skillImgStyle,
                 }}
               >
-                <Typography
+                <img
+                  src={`./images/${item.imgName}.png`}
+                  alt={item.imgName}
+                  style={{
+                    ...imgSize,
+                  }}
+                />
+                <Box
+                  className="hover-text"
                   sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 14, lg: 20 }, // 글자 크기
+                    ...skillAfterHover,
                   }}
                 >
-                  OracleDB
-                </Typography>
+                  <Typography
+                    sx={{
+                      ...hoverFontStyle,
+                      fontSize: item.firstTextFont, // 글자 크기
+                    }}
+                  >
+                    {item.firstText}
+                  </Typography>
+
+                  {item.textCount >= 2 && (
+                    <Typography
+                      sx={{
+                        ...hoverFontStyle,
+                        fontSize: item.secondTextFont, // 글자 크기
+                      }}
+                    >
+                      {item.secondText}
+                    </Typography>
+                  )}
+
+                  {item.textCount === 3 && (
+                    <Typography
+                      sx={{
+                        ...hoverFontStyle,
+                        fontSize: item.thirdTextFont, // 글자 크기
+                      }}
+                    >
+                      {item.thirdText}
+                    </Typography>
+                  )}
+                </Box>
               </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/mysql.png"
-                alt="MySQL"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 17, lg: 24 }, // 글자 크기
-                  }}
-                >
-                  MySQL
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/mariadb.png"
-                alt="MariaDB"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 15, lg: 22 }, // 글자 크기
-                  }}
-                >
-                  MariaDB
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              sx={{
-                ...skillImgStyle,
-              }}
-            >
-              <img
-                src="./images/MongoDB.png"
-                alt="MongoDB"
-                style={{
-                  ...imgSize,
-                }}
-              />
-              <Box
-                className="hover-text"
-                sx={{
-                  ...skillAfterHover,
-                }}
-              >
-                <Typography
-                  sx={{
-                    ...hoverFontStyle,
-                    fontSize: { xs: 13, lg: 19 }, // 글자 크기
-                  }}
-                >
-                  MongoDB
-                </Typography>
-              </Box>
-            </Box>
+            ))}
           </Box>
         </Box>
 
