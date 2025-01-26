@@ -3,7 +3,6 @@ import { Box, Button, Container } from "@mui/material";
 import { animateScroll as scroll } from "react-scroll";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 
-
 const Footer = () => {
   return (
     <Container disableGutters maxWidth={false}>

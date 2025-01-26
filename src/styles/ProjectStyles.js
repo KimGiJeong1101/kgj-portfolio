@@ -24,7 +24,7 @@ export const projectButtonStyle = {
   },
 };
 
-// ""Project 스타일
+// Project 스타일
 
 export const teamAfterHover = {
   position: "absolute",
