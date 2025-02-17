@@ -38,9 +38,4 @@
 
 ---
 
-## 📦 설치 및 실행 방법 (Installation & Setup)
 
-### 1️⃣ 프로젝트 클론
-```bash
-git clone https://github.com/username/project-name.git
-cd project-name
