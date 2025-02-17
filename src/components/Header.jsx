@@ -47,7 +47,7 @@ const Header = () => {
               justifyContent: "flex-start", // LOGO 왼쪽 정렬
             }}
           >
-            KGJ's PortFolio
+            KGJ's PortFoliofdfdfdf
           </Typography>
           {/* 햄버거 아이콘 */}
           <Box
