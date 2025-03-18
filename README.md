@@ -50,4 +50,4 @@ React 기반으로 제작한 포트폴리오 웹사이트로, **반응형 UI와 
 ---
 
 
-(./project-overview.md)
+ [트러블슈팅 자세히 보기](./project-overview.md)
