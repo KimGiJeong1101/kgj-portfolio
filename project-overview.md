@@ -14,7 +14,7 @@
 
 ### **클라이언트**  
 - **React.js**를 사용한 프론트엔드 개발  
-- **MUI\(Material-UI\)**로 일관된 UI 제공 
+- __MUI(Material-UI)__로 일관된 UI 제공  
 - **React-Query** 및 **Axios**로 API 요청 관리  
 - **Redux**로 전역 상태 관리  
 
