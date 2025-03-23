@@ -36,7 +36,8 @@
 - **기능**:
   - MUI의 **Grid 시스템**과 **Breakpoints**(xs, lg 등)를 활용하여 반응형 UI 구현
   - **hover 효과** 및 **transition**을 활용하여 사용자 경험 향상
-  - 다양한 화면 크기에 적응하는 UI 제공
+  - 다양한 화면 크기에 적응하는 UI 제공  
+  ![이미지 설명](./frontend/guide_images/깃허브%20액션%20이용해서%20프리티어%20룰%20적용%20과정.png)
 
 ### 2. **조건부 렌더링 활용**
 - **기능**:
@@ -66,7 +67,9 @@
 - **상황**: 매번 `npm run build` 후 수동으로 배포하는 과정이 번거로움
 - **해결 방법**:
   - **GitHub Actions**를 설정하여 **push**만으로 자동 빌드 및 배포가 진행되도록 구현
-- **결과**: 배포 자동화로 시간 절약 및 편리한 배포 관리 가능
+- **결과**: 배포 자동화로 시간 절약 및 편리한 배포 관리 가능  
+[(코드 파일 보기)](https://github.com/KimGiJeong1101/kgj-portfolio/blob/main/.github/workflows/deploy.yml)  
+[GitHub Actions를 활용한 정적 페이지 배포 Vite 공식 문서](https://ko.vite.dev/guide/static-deploy.html)
 
 ---
 
