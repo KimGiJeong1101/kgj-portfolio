@@ -11,12 +11,19 @@ import {
   hoverFontStyle,
 } from "../styles/SkillStyle";
 
-import toolData from "../jsondata/developtool-data.json";
-import frontendData from "../jsondata/frontendskill-data.json";
-import backendData from "../jsondata/backendskill-data.json";
-import databaseData from "../jsondata/databaseskill-data.json";
+import { SkillType } from "../types/SkillType";
 
-const Skill = () => {
+import toolDataJson from "../jsondata/developtool-data.json";
+import frontendDataJson from "../jsondata/frontendskill-data.json";
+import backendDataJson from "../jsondata/backendskill-data.json";
+import databaseDataJson from "../jsondata/databaseskill-data.json";
+
+const toolData: SkillType[] = toolDataJson;
+const frontendData: SkillType[] = frontendDataJson;
+const backendData: SkillType[] = backendDataJson;
+const databaseData: SkillType[] = databaseDataJson;
+
+const Skill: React.FC = () => {
   return (
     <Box
       id="skill"

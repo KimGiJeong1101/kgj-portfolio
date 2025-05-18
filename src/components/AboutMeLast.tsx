@@ -16,16 +16,22 @@ import {
   aboutButtonStyle,
 } from "../styles/AboutMeStyle";
 
+type IconItem = {
+  name: "AccountCircle" | "Event" | "Phone" | "Mail" | "LocationOn";
+  icon: JSX.Element;
+};
+
 // 아이콘, 제목, 내용 배열 (외부로 이동)
-const icons = [
-  <AccountCircle sx={iconStyle} />,
-  <Event sx={iconStyle} />,
-  <Phone sx={iconStyle} />,
-  <Mail sx={iconStyle} />,
-  <LocationOn sx={iconStyle} />,
+const icons: IconItem[] = [
+  { name: "AccountCircle", icon: <AccountCircle sx={iconStyle} /> },
+  { name: "Event", icon: <Event sx={iconStyle} /> },
+  { name: "Phone", icon: <Phone sx={iconStyle} /> },
+  { name: "Mail", icon: <Mail sx={iconStyle} /> },
+  { name: "LocationOn", icon: <LocationOn sx={iconStyle} /> },
 ];
-const titles = ["이름:", "생년월일:", "연락처:", "이메일:", "위치:"];
-const contents = [
+
+const titles: string[] = ["이름:", "생년월일:", "연락처:", "이메일:", "위치:"];
+const contents: string[] = [
   "김기정",
   "1993.11.01",
   "010 - 2905 - 2325",
@@ -33,11 +39,11 @@ const contents = [
   "경기 부천시 성곡로",
 ];
 
-const buttons = ["skill", "project", "career"];
-const buttonTexts = ["Skill 보기", "Project 보기", "Career 보기"];
+const buttons: string[] = ["skill", "project", "career"];
+const buttonTexts: string[] = ["Skill 보기", "Project 보기", "Career 보기"];
 
-const AboutMeLast = () => {
-  const handleScroll = (target) => {
+const AboutMeLast: React.FC = () => {
+  const handleScroll = (target: string) => {
     scroller.scrollTo(target, {
       duration: 800,
       smooth: true,
@@ -153,7 +159,7 @@ const AboutMeLast = () => {
                           ...iconTypoStyle,
                         }}
                       >
-                        {icons[index]}
+                        {icons[index].icon}
                       </Typography>
                       <Typography
                         sx={{

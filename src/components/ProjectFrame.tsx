@@ -4,11 +4,13 @@ import ToyProject from "./ToyProject";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { frameBoxStyle, projectButtonStyle } from "../styles/ProjectStyles";
 
-const projectIndex = [1, 2, 3, 4, 5, 6]; // 프로젝트 틀을 늘리고 싶으면 이곳에 배열 추가
+type ProjectCategory = "toy" | "team" | "";
 
-const ProjectFrame = () => {
-  const [projectType, setProjectType] = useState(""); // "toy" or "team"
-  const [isVisible, setIsVisible] = useState(false); // 애니메이션 상태 관리
+const projectIndex: number[] = [1, 2, 3, 4, 5, 6]; // 프로젝트 틀을 늘리고 싶으면 이곳에 배열 추가
+
+const ProjectFrame: React.FC = () => {
+  const [projectType, setProjectType] = useState<ProjectCategory>(""); // "toy" or "team"
+  const [isVisible, setIsVisible] = useState<boolean>(false); // 애니메이션 상태 관리
 
   const handleToyClick = () => {
     setProjectType("toy");

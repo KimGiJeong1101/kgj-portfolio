@@ -9,7 +9,7 @@ import {
   gridThreeStyle,
 } from "../styles/CareerStyle";
 
-const Career = () => {
+const Career: React.FC = () => {
   return (
     <Container disableGutters maxWidth={false}>
       <Typography
@@ -93,7 +93,7 @@ const Career = () => {
               <ListItem sx={{ paddingLeft: "0px" }}>
                 <Typography sx={{ paddingLeft: "0px" }} variant="body1">
                   <ul
-                    class="cusul"
+                    className="cusul"
                     style={{ paddingLeft: "17px", listStyleType: "square" }}
                   >
                     <li>
@@ -190,7 +190,7 @@ const Career = () => {
               <ListItem sx={{ paddingLeft: "0px" }}>
                 <Typography sx={{ paddingLeft: "0px" }} variant="body1">
                   <ul
-                    class="cusul"
+                    className="cusul"
                     style={{ paddingLeft: "17px", listStyleType: "square" }}
                   >
                     <li>
@@ -297,7 +297,7 @@ const Career = () => {
               <ListItem sx={{ paddingLeft: "0px" }}>
                 <Typography sx={{ paddingLeft: "0px" }} variant="body1">
                   <ul
-                    class="cusul"
+                    className="cusul"
                     style={{ paddingLeft: "17px", listStyleType: "square" }}
                   >
                     <li>
@@ -360,7 +360,7 @@ const Career = () => {
               <ListItem sx={{ paddingLeft: "0px" }}>
                 <Typography variant="body1" sx={{ paddingLeft: "0px" }}>
                   <ul
-                    class="cusul"
+                    className="cusul"
                     style={{ paddingLeft: "17px", listStyleType: "square" }}
                   >
                     <li>
@@ -422,7 +422,7 @@ const Career = () => {
               <ListItem sx={{ paddingLeft: "0px" }}>
                 <Typography variant="body1" sx={{ paddingLeft: "0px" }}>
                   <ul
-                    class="cusul"
+                    className="cusul"
                     style={{ paddingLeft: "17px", listStyleType: "square" }}
                   >
                     <li>망분리용 KVM 스위치 및 PC 설치, 관리 및 사용자 교육</li>

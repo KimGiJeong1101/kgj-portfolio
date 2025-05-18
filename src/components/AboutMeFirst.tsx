@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Box, Typography } from "@mui/material";
 
-const AboutMeFirst = () => {
+const AboutMeFirst: React.FC = () => {
   return (
     <motion.div
       style={{

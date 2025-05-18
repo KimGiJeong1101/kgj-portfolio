@@ -4,8 +4,8 @@ import { Box, Container } from "@mui/material";
 import AboutMeFirst from "./AboutMeFirst";
 import AboutMeLast from "./AboutMeLast";
 
-const AboutMe = () => {
-  const [showLast, setShowLast] = useState(false); // AboutMeLast 컴포넌트의 표시 여부 관리
+const AboutMe: React.FC = () => {
+  const [showLast, setShowLast] = useState<boolean>(false); // AboutMeLast 컴포넌트의 표시 여부 관리
 
   // AboutMeFirst가 애니메이션 후 AboutMeLast를 표시하도록 설정
   useEffect(() => {

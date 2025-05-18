@@ -10,17 +10,16 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from "react";
 import { Accordion, AccordionSummary } from "@mui/material";
 
-const pages = ["About Me", "Skill", "Project", "Career"];
+const pages: string[] = ["About Me", "Skill", "Project", "Career"];
 
-const Header = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+const Header: React.FC = () => {
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   const handleToggleAccordion = () => {
     setIsExpanded((prev) => !prev);
   };
 
   const handleLinkClick = () => {
-    // 링크 클릭 시 아코디언을 닫기
     setIsExpanded(false);
   };
 
@@ -35,7 +34,7 @@ const Header = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              scroll.scrollToTop({ duration: 800 }); // 800ms에 걸쳐 스크롤
+              scroll.scrollToTop({ duration: 800 });
             }}
             sx={{
               mr: 2,
@@ -44,12 +43,11 @@ const Header = () => {
               letterSpacing: ".0rem",
               color: "inherit",
               textDecoration: "none",
-              justifyContent: "flex-start", // LOGO 왼쪽 정렬
+              justifyContent: "flex-start",
             }}
           >
             KGJ's PortFolio
           </Typography>
-          {/* 햄버거 아이콘 */}
           <Box
             sx={{
               flexGrow: 1,
@@ -65,11 +63,8 @@ const Header = () => {
               onClick={handleToggleAccordion}
               color="inherit"
             >
-              <MenuIcon sx={{ fontSize: "42px", color: "white" }} />{" "}
-              {/* 아이콘 크기와 색상 변경 */}
+              <MenuIcon sx={{ fontSize: "42px", color: "white" }} />
             </IconButton>
-
-            {/* 아코디언 */}
 
             <Accordion
               expanded={isExpanded}
@@ -87,19 +82,17 @@ const Header = () => {
               <AccordionSummary
                 aria-controls="panel1a-content"
                 id="panel1a-header"
-                sx={{ display: "none" }} // Summary 숨김
-              ></AccordionSummary>
-              {/* 아코디언 내용 */}
-
+                sx={{ display: "none" }}
+              />
               {pages.map((page) => (
                 <Link
                   key={page}
-                  to={page.toLowerCase()} // 페이지 이름을 소문자로 해서 id와 일치시킴
+                  to={page.toLowerCase()}
                   spy={true}
                   onClick={handleLinkClick}
                   smooth={true}
                   duration={800}
-                  offset={-70} // 헤더 높이를 고려하여 약간 조정
+                  offset={-70}
                   style={{
                     textAlign: "center",
                     cursor: "pointer",
@@ -118,7 +111,6 @@ const Header = () => {
               ))}
             </Accordion>
           </Box>
-          {/* 데스크탑 네비게이션 버튼 */}
           <Box
             sx={{
               justifyContent: "flex-end",
@@ -129,12 +121,11 @@ const Header = () => {
             {pages.map((page) => (
               <Link
                 key={page}
-                to={page.toLowerCase()} // 페이지 이름을 소문자로 해서 id와 일치시킴
+                to={page.toLowerCase()}
                 spy={true}
                 smooth={true}
                 duration={800}
-                offset={-80} // 헤더 높이를 고려하여 약간 조정
-                // offset={page.toLowerCase() === "carrer" ? -50 : -80}
+                offset={-80}
                 style={{
                   margin: "0 10px",
                   color: "white",

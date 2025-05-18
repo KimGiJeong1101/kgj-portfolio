@@ -25,9 +25,12 @@ import {
   anchorStyle,
 } from "../styles/ProjectStyles";
 
-import toyProjeData from "../jsondata/toyproject-data.json";
+import { ProjectType, ProjectProps } from "../types/ProjectType";
+import toyProjeDataJson from "../jsondata/toyproject-data.json";
 
-const ToyProject = ({ toyprojectId, isVisible }) => {
+const toyProjeData: ProjectType[] = toyProjeDataJson;
+
+const ToyProject: React.FC<ProjectProps> = ({ toyprojectId, isVisible }) => {
   // 공통 스타일을 객체로 정의
   const toyBoxStyle = {
     border: "solid white 2px",
@@ -135,7 +138,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                       ...ulStyle,
                     }}
                   >
-                    {item.details.map((detail, index) => (
+                    {item.details?.map((detail, index) => (
                       <li key={index}>{detail}</li>
                     ))}
                   </Box>
@@ -165,7 +168,7 @@ const ToyProject = ({ toyprojectId, isVisible }) => {
                         ...skillDisplayStyle,
                       }}
                     >
-                      {item.technologies.map((technologie, index) => (
+                      {item.technologies?.map((technologie, index) => (
                         <Box
                           key={index}
                           sx={{

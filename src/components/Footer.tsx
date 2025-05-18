@@ -3,7 +3,7 @@ import { Box, Button, Container } from "@mui/material";
 import { animateScroll as scroll } from "react-scroll";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <Container disableGutters maxWidth={false}>
       <Box
@@ -15,15 +15,13 @@ const Footer = () => {
         }}
       >
         <Button
-          onClick={(e) => {
+          onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
             e.preventDefault();
             scroll.scrollToTop({ duration: 800 }); // 800ms에 걸쳐 스크롤
           }}
           href="#"
         >
-          <ArrowCircleUpIcon
-            sx={{ fontSize: "42px", color: "#696969" }}
-          ></ArrowCircleUpIcon>
+          <ArrowCircleUpIcon sx={{ fontSize: "42px", color: "#696969" }} />
         </Button>
       </Box>
     </Container>

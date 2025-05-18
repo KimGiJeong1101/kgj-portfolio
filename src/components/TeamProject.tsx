@@ -26,9 +26,12 @@ import {
   projectLoading,
 } from "../styles/ProjectStyles";
 
-import teamProjeData from "../jsondata/teamproject-data.json";
+import { ProjectType, ProjectProps } from "../types/ProjectType";
+import teamProjeDataJson from "../jsondata/teamproject-data.json";
 
-const TeamProject = ({ teamprojectId, isVisible }) => {
+const teamProjeData: ProjectType[] = teamProjeDataJson;
+
+const TeamProject: React.FC<ProjectProps> = ({ teamprojectId, isVisible }) => {
   // 공통 스타일을 객체로 정의
   const teamBoxStyle = {
     border: "solid white 2px",
@@ -137,7 +140,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                           ...ulStyle,
                         }}
                       >
-                        {item.details.map((detail, index) => (
+                        {item.details?.map((detail, index) => (
                           <li key={index}>{detail}</li>
                         ))}
                       </Box>
@@ -167,7 +170,7 @@ const TeamProject = ({ teamprojectId, isVisible }) => {
                             ...skillDisplayStyle,
                           }}
                         >
-                          {item.technologies.map((technologie, index) => (
+                          {item.technologies?.map((technologie, index) => (
                             <Box
                               key={index}
                               sx={{
